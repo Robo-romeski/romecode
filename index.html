@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="rome.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.parallax.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/motion.css">
+  </head>
+  <title>RomeCode</title>
+  <video autoplay poster="assets/img/romeintro.jpg" id="bgvid">
+    <source src="assets/videos/romeintro.mp4" type="video/mp4">
+    <source src="assets/videos/romeintro.webm" type="video/webm">
+    <source src="assets/videos/romeintro.ogv" type="video/ogg">
+  </video>
+  <body ng-app="quoteApp">
+    <div class="navbar navbar-inverse navbar-fixed-top" id="menufade">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" id="headlogo">RomeCode</a>
+        </div>
+        <div class="navbar-collapse collapse mini-menu">
+          <ul class="nav navbar-nav navbar-right spincycle">
+            <li><a href="https://www.linkedin.com/pub/jerome-moore/20/b36/31b" target="_blank"><i class="fa fa-linkedin-square icon-3x spin"></i></a></li>
+            <li><a href="https://github.com/Robo-romeski" target="_blank"><i class="fa fa-github-alt icon-3x"></i></a></li>
+            <li><a href="skype:jerome_0_moore?add"><i class="fa fa-skype icon-3x"></i></a></li>
+          </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+      
+      <div class="container tron" id="intro">
+        <div class="parallex-viewport">
+          <div id="parallax" class="clear">
+            <div class="parallax-layer" style="width:1300px; height:600px;">
+              <img src="assets/img/city.png" style="width:600px; height:400px;"/>
+            </div>
+            
+            <div class="parallax-layer" style="width:1400px; height:620px;">
+              <img src="assets/img/newcity.png" style="width:1400px; height:620px;"/>
+            </div>
+            
+            
+            <div class="parallax-layer" style="width:1000px; height:600px;">
+              <img src="assets/img/planes.png" style="width:1400px; height:550px;"  />
+            </div>
+            <div class="parallax-layer" style="width:1200px; height:650px;">
+              <img src="assets/img/logoface.png" style="width:1400px; height:550px;"/>
+            </div>
+            <div class="parallax-layer" style="width:1200px; height:650px;">
+              <h1>Welcome to Romecode!</h1>
+            </div>
+          </div>
+        </div>
+        
+        </div><!-- /.container -->
+        <div class="clear"></div>
+
+         <div  ng-controller="QuoteCtrl">
+         <quote-directive class="bounceIn"></quote-directive>
+         </div>
+        
+    <section id="home" data-speed="4" data-type="background">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span4 well">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
+            <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+            </div><!-- /.span4 -->
+            <div class="span4 well">
+              <h2>Heading</h2>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+              </div><!-- /.span4 -->
+              <div class="span4 well">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>
+                <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+                </div><!-- /.span4 -->
+              </div>
+            </div>
+          </section>
+          
+          <section id="about" data-speed="2" data-type="background">
+            <div class="container">
+              <div class="row-fluid">
+                <div class="span4 well">
+                  <h2>Heading</h2>
+                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
+                  <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+                  </div><!-- /.span4 -->
+                  <div class="span4 well">
+                    <h2>Heading</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+                    </div><!-- /.span4 -->
+                    <div class="span4 well">
+                      <h2>Heading</h2>
+                      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>
+                      <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+                      </div><!-- /.span4 -->
+                    </div>
+                  </div>
+                </section>
+                <div id="header">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6 col-lg-offset-1" id="main">
+                        <h1>Hello EveryBody!!</h1>
+                        
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="footer">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6 col-lg-offset-3">
+                        <p class="copyright">Copyright &copy; 2014 - RomeCode.CoM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+                <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.js"></script>
+                <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+                <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+                <script type="text/javascript" src="assets/js/jquery.event.frame.js"></script>
+                <script type="text/javascript" src="assets/js/init.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-animate.js"></script>
+                <script type="text/javascript" src="assets/js/app.js"></script>
+                <script type="text/javascript" src="assets/js/quoteFactory.js"></script>
+                y<script type="text/javascript" src="assets/js/quoteDirective.js"></script>
+                <script type="text/javascript" src="assets/js/quoteControllers.js"></script>
+                <script>
+                $(document).ready(function()
+                {
+                $('#parallax .parallax-layer')
+                .parallax({
+                mouseport: $('#parallax')
+                });
+                });
+                var ve = document.getElementById('bgvid');
+                if(ve != null && ve.addEventListener) {
+                ve.addEventListener(
+                'ended',
+                function() {
+                $("#menufade, #para, #parallax, #footer, .fade, #header, #home, #about, #base").delay(100).fadeIn(1000)
+                },
+                false);
+                console.log('fade works');
+                }
+                
+                // $('#openBtn').click(function(){
+                //   $('#myModal').modal({show:true})
+                // });
+                $(document).ready(function()
+                {
+                $(".fade, #footer, #header, #parallax,#home, #about, #base").hide(0);
+                });
+                $('.navbar-header button').click(function(event){
+                $('.mini-menu').toggle("slow",2);
+                });
+                </script>
+              </body>
+            </html>

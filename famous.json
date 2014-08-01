@@ -1,0 +1,32 @@
+[
+ {
+ 	"id": 1,
+	"quote": "Without music, life would be a mistake.",
+	"author":"Friedrich Nietzsche",
+	"source":"Twilight of the Idols"
+ },
+ {
+ 	"id": 2,
+    "quote": "What goes on inside is just too fast and huge and all interconnected for words to do more than barely sketch the outlines of at most one tiny little part of it at any given instant.",
+	"author":"David Foster Wallace",
+	"source":"Oblivion"
+ },
+ {
+ 	"id": 3,
+   "quote": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+	"author":"Oscar Wilde",
+	"source":"The Happy Prince and Other Stories"
+ },
+ {
+ 	"id": 4,
+    "quote": "If you were half as funny as you think you are, you'd be twice as funny as you are now.",
+	"author":"Cassandra Clare",
+	"source":"City of Bones"
+ },
+ {
+ 	"id": 5,
+    "quote": "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
+	"author":"J.K. Rowling",
+	"source":"Harry Potter and the Goblet of Fire"
+ }
+]
