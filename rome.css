@@ -1,0 +1,362 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
+@import url('http://fonts.googleapis.com/css?family=Press+Start+2P:400,700,900');
+@import url('http://fonts.googleapis.com/css?family=Megrim');
+@import url('http://fonts.googleapis.com/css?family=Ewert:400,700,900');
+@import url('http://fonts.googleapis.com/css?family=Dosis:400,800');
+@import url('http://fonts.googleapis.com/css?family=Fugaz+One|Calligraffitti|Orbitron:400,900');
+@import url('http://fonts.googleapis.com/css?family=Bangers');
+
+
+
+
+body{
+
+  padding-top: 50px;
+}
+
+ blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.main {
+	background-color: rgba(0, 0, 255, 0.4);
+background: rgba(0, 0, 255, 0.4);
+/*color: rgba(0, 0, 255, 0.4);*/
+font-family: 'Bangers', cursive; 
+ background-size: 1440px 800px;
+ background-repeat:no-repeat;
+ display: compact;
+ z-index: 1000000;
+ color:white;
+}
+
+.base{
+    background-color: #ffffff;
+
+}
+.base h1{
+
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+text-shadow:8px 8px 12px #000000;
+font-size: 50px;
+}
+.base h2 {
+
+font-family: 'Orbitron', sans-serif;
+color:#ffffff;
+text-shadow:2px 4px 8px #000000;
+font-size: 40px;
+}
+
+.base h3{
+    
+    font-family: 'Calligraffitti', cursive;
+    
+    color:#ffffff;
+text-shadow:4px 4px 8px #000000;
+font-size: 30px;
+}
+.base p{
+     font-family: 'Ewert', cursive;
+     
+}
+.main h1{
+text-shadow:5px 5px 5px #000000;
+}
+ video#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: 100%; height: auto; z-index: 0;
+background: url('') no-repeat center top;
+background-size: cover;
+z-index: -1;
+}
+img#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: 100%; height: auto; z-index: 0;
+background: url('/assets/img/romeintro.jpg') no-repeat center top;
+background-size: cover;
+z-index: -1;
+}
+#cellbody {
+  padding-top: 0px; 
+  background: url('/assets/img/romeintro.jpg') no-repeat center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  color: #000000;
+}
+#headlogo {
+	font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    padding:0px;
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+#headerback{
+background: url('/assets/img/paper1.png') repeat;
+}
+#menufade, .faze{
+display: none;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,255,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,255,0.4); 
+}
+
+.footer {
+  height: 150px;
+ /* background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Safari 5.1 to 6.0 */
+ /* background: -o-linear-gradient(right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Opera 11.1 to 12.0 */
+ /*background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Firefox 3.6 to 15 */
+ /* background: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* Standard syntax (must be last) */
+ /* background-color:transparent;*/
+  border:0 solid #080808;
+  border-top-width: 0px;
+  font-family: 'Fugaz One', cursive;
+  padding-top: 50px;
+}
+.spincycle a {
+transition:All 2s ease;
+-webkit-transition:All 2s ease;
+-moz-transition:All 2s ease;
+-o-transition:All 2s ease;
+transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
+-moz-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
+-o-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
+-ms-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
+}
+.spincycle a:hover{
+transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
+-webkit-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
+-moz-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
+-o-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
+-ms-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
+}
+
+.nav .navbar-nav .navbar-right .spincycle a:hover{
+transform: rotate(0deg) scale(0.791) skew(360deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
+-moz-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
+-o-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
+-ms-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
+}
+
+#jumboOn{
+margin: 0 100px 0 100px;
+}
+
+
+#scrollContent{
+  height:186px;
+  overflow:auto;
+  position:relative;
+}
+
+.tron{
+  width: 100%;
+padding-left: 0px;
+padding-right: 0px;
+
+
+}
+#parallax {
+   position:relative; 
+   overflow:hidden; 
+   width:100%; 
+   height:660px;
+   background-image:url('assets/img/stars.jpg');
+   background-size: 1400px 660px;
+}
+.parallax-viewport {
+   
+    position: relative;     /* relative, absolute, fixed */
+    overflow: hidden;
+}
+.parallax-layer {
+    position: absolute;
+}
+#intro { 
+      
+      height: auto;  
+      margin: 0 auto; 
+        width: 100%; 
+        position: relative; 
+        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+        padding:0px;
+    }
+    #home { 
+      background: url(assets/img/dark-wood.png) 50% 0 fixed; 
+      height: auto;  
+      margin: 0 auto; 
+        width: 100%; 
+        position: relative; 
+        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+        padding: 200px 0;
+    }
+    #about { 
+      background: url(assets/img/webwhite.png) 100% 0 fixed repeat; 
+      height: auto;
+      margin: 0 auto; 
+        width: 100%; 
+        position: relative; 
+        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+        padding: 100px 0;
+        color: #fff;
+    }
+    .hidden{
+     opacity:0;
+     display: none;
+}
+.visible{
+     opacity:1;
+     display: inherit;
+}
+
+    /* Non-essential demo stuff */
+    .hero-unit {
+      background-color: #fff;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .media-object { width: 64px; height: 64px; padding-bottom: 30px }
+    .clear:after    {content:"\0020"; display:block; height:0; clear:both; visibility:hidden; overflow:hidden;}
+.clear          {display:block; position: relative;}
+
+.animate-enter-setup, .animate-leave-setup {
+    -webkit-transition: 1s linear all;
+    /* Safari/Chrome */
+    -moz-transition: 1s linear all;
+    /* Firefox */
+    -ms-transition: 1s linear all;
+    /* IE10 */
+    -o-transition: 1s linear all;
+    /* Opera */
+    transition: 1s linear all;
+    /* Future Browsers */
+}
+.animate-enter-setup {
+    opacity: 0;
+}
+.animate-enter-setup.animate-enter-start {
+    /* The animation code itself */
+    opacity: 1;
+}
+.animate-leave-setup {
+    opacity: 1;
+}
+.animate-leave-setup.animate-leave-start {
+    /* The animation code itself */
+    opacity: 0;
+}
+.rollIn {
+-webkit-animation: cssAnimation 3s 1 ease;
+-moz-animation: cssAnimation 3s 1 ease;
+-o-animation: cssAnimation 3s 1 ease;
+}
+
+#slide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    height: 200px;
+  background: -webkit-linear-gradient(left, rgba(0,0,255,0), rgba(0,0,255,0.5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0,0,255,0), rgba(0,0,255,0.5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(0,0,255,0), rgba(0,0,255,0.5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0,0,255,0), rgba(0,0,255,0.5)); /* Standard syntax (must be last) */
+  background-color:black;
+  border:0 solid #080808;
+  border-top-width: 0px;
+  margin-top:50px;
+}
+
+.fTab {
+     position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1em;
+    background-color: white;
+    -webkit-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+      animation:myfirst 5s;
+      -moz-animation:myfirst 5s infinite; /* Firefox */
+    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+}
+
+.fTab.active {
+    bottom: 0px;
+    z-index: 100;
+    background-color: gray;
+}
+
+.fTab.active + #slide {
+    max-height: 300px;
+    z-index: 100;
+}
+#well{
+  background: black;
+}
+.spot{
+  margin-top: 20%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.modal{
+  width: 100%;
+  height:100%;
+}
+.modal-body{
+  width: 100%;
+  height:100%;
+}
+.modal-title, .modal-body{
+  color:blue;
+}
+
+
+
+ @-moz-keyframes myfirst /* Firefox */
+    {
+    0%   {background:gray;}
+    50%  {background:white;}
+    100%   {background:black;}
+    }
+
+        @-webkit-keyframes myfirst /* Safari and Chrome */
+    {
+    0%   {background:gray;}
+    50%  {background:white;}
+    100%   {background:black;}
+    }
