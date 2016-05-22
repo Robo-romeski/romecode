@@ -140,6 +140,7 @@ display: none;
  /*background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Firefox 3.6 to 15 */
  /* background: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* Standard syntax (must be last) */
  /* background-color:transparent;*/
+ background-color: white;
   border:0 solid #080808;
   border-top-width: 0px;
   font-family: 'Fugaz One', cursive;
@@ -308,11 +309,11 @@ padding-right: 0px;
     bottom: 0;
     padding: 1em;
     background-color: white;
-    -webkit-transition: bottom 0.5s;
+  /*  -webkit-transition: bottom 0.5s;
     transition: bottom 0.5s;
       animation:myfirst 5s;
-      -moz-animation:myfirst 5s infinite; /* Firefox */
-    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+      -moz-animation:myfirst 5s infinite; 
+    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */*/
 }
 
 .fTab.active {
