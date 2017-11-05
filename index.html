@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:url" content="http://www.romecode.com" />
 <meta property="og:title" content="RomeCode.Com - Development at it's Finest. " />
-<meta property="og:description" content="Portfolio site for Jerome Moore, developed with technologies such as angular, bootstrap, node.js, Json CSS3 animations. Home to games of the future." />
+<meta property="og:description" content="Portfolio site for Jerome Moore,
+developed with technologies such as angular, bootstrap, node.js, Json CSS3 animations.
+Home to games of the future." />
 <meta property="og:image" content="assets/img/favicon.png" />
     <link rel="shortcut icon" href="assets/img/favicon.png">
 
@@ -22,7 +24,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
 <!-- Preloader -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     //<![CDATA[
         $(window).load(function() { // makes sure the whole site is loaded
             $('#status').fadeOut(); // will first fade out the loading animation
@@ -30,50 +32,54 @@
             $('body').delay(350).css({'overflow':'visible'});
         })
     //]]>
-</script>
+</script> -->
 <style>
-  body {
+  /*body {
     overflow: hidden;
-}
+}*/
 
 /* Preloader */
-#preloader {
+/*#preloader {
     position: fixed;
     top:0;
     left:0;
     right:0;
     bottom:0;
-    background-color:#fff; /* change if the mask should have another color then white */
-    z-index:99; /* makes sure it stays on top */
+    background-color:#fff;
+    /* change if the mask should have another color then white */
+    /*z-index:99; */
+    /* makes sure it stays on top */
 }
 
-#status {
+/*#status {
     width:200px;
     height:200px;
     position:absolute;
-    left:50%; /* centers the loading animation horizontally one the screen */
-    top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(assets/img/box.gif); /* path to your loading animation */
-    background-repeat:no-repeat;
-    background-position:center;
-    margin:-100px 0 0 -100px; /* is width and height divided by two */
-}
+    /*left:50%; */
+    /* centers the loading animation horizontally one the screen */
+    /*top:50%; */
+    /* centers the loading animation vertically one the screen */
+    /*background-image:url(assets/img/box.gif); */
+    /* path to your loading animation */
+    /*background-repeat:no-repeat;
+    background-position:center;*/
+    /*margin:-100px 0 0 -100px; */
+    /* is width and height divided by two */
+/*}*/
 </style>
   </head>
 
   <title>RomeCode</title>
-    <video autoplay poster="assets/image/romeintro.jpg" id="bgvid">
+    <!-- <video autoplay poster="assets/image/romeintro.jpg" id="bgvid">
     <source src="assets/videos/romeintro.mp4" type="video/mp4">
     <source src="assets/videos/romeintro.webm" type="video/webm">
     <source src="assets/videos/romeintro.ogv" type="video/ogg">
-  </video>
+  </video> -->
   <body ng-app="quoteApp">
   <!-- Preloader -->
-<div id="preloader">
-    <div id="status">&nbsp;</div>
-</div>
-    <div class="navbar navbar-inverse navbar-fixed-top" id="menufade">
-      <div class="container">
+
+    <div class="navbar navbar-fixed-top" id="menufade">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
@@ -83,52 +89,36 @@
           <a class="navbar-brand" href="index.html" id="headlogo"><img src="assets/img/romecode.png" height="50px;" width="200px"></a>
         </div>
         <div class="navbar-collapse collapse mini-menu">
-          <ul class="nav navbar-nav navbar-right spincycle">
-            <li><a href="https://www.linkedin.com/pub/jerome-moore/20/b36/31b" target="_blank"><i class="fa fa-linkedin-square icon-4x spin"></i></a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="https://www.linkedin.com/pub/jerome-moore/20/b36/31b" target="_blank"><i class="fa fa-linkedin-square icon-4x spin"></i></a></li>
             <li><a href="https://github.com/Robo-romeski" target="_blank"><i class="fa fa-github-alt icon-4x"></i></a></li>
-            <li><a href="skype:jerome_0_moore?add"><i class="fa fa-skype icon-4x"></i></a></li>
+            <li><a href="skype:jerome_0_moore?add"><i class="fa fa-skype icon-4x"></i></a></li> -->
           </ul>
           </div><!--/.nav-collapse -->
-        </div>
+
       </div>
 
-      <div class="container tron" id="intro">
-        <div class="parallex-viewport">
-          <div id="parallax" class="clear">
-            <div class="parallax-layer" style="width:1300px; height:600px;">
-              <img src="assets/img/city.png" style="width:600px; height:400px;"/>
-            </div>
-
-            <div class="parallax-layer" style="width:1400px; height:620px;">
-              <img src="assets/img/newcity.png" style="width:1400px; height:620px;"/>
-            </div>
-
-
-            <div class="parallax-layer" style="width:1000px; height:600px;">
-              <img src="assets/img/planes.png" style="width:1400px; height:550px;"  />
-            </div>
-            <div class="parallax-layer" style="width:1200px; height:650px;">
-              <img src="assets/img/logoface.png" style="width:1400px; height:550px;"/>
-            </div>
-            <div class="parallax-layer" style="width:1300px; height:650px;">
-              <div class="jumbotron main spot">
-              <h1>Welcome to romeCode - New York's Leading Tech Consulting Company</h1>
-              <p>Hello visitors. This is the first of many &#8220;final&#8221; touches; The product of a winning battle with procrastination, and
-                a re-infusion of creativity. This main feature is an ode to the artists of the world. I may know my way around a psd, but the extent of my visual creativity from scratch is stick-figurines (I know; Working on it). This is a mash-up of free creatives I have accumulated over the years; If you think it looks funny, then just consider it abstract art.  <i class="fa fa-smile-o fa-2"></i></p>
-            </div>
-            </div>
-          </div>
-          <span class="fTab" id="base"><img src="assets/img/outline.png" width="50" height="50"><div
-  class="fb-like"
-  data-send="true"
-  data-width="200">
-</div></span>
-  <div class="slide">
-  </div>
+      <div class="container" id="intro">
+        <div class="smoke">
+          <video  id="video" autoplay loop>
+            <source src="assets/videos/smoke.mp4" type="video/mp4"></source>
+          </video>
         </div>
+        <div class="smokeMessage">
 
+
+
+          <h1>yaggga yoooo</h1>
+
+      
+        </div>
         </div><!-- /.container -->
         <div class="clear"></div>
+        <span class="fTab" id="base"><img src="assets/img/outline.png" width="50" height="50"><div
+class="fb-like"
+data-send="true"
+data-width="200">
+</div></span>
 
 
          </div>
@@ -235,7 +225,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-lg-6 col-lg-offset-3">
-                        <p class="copyright">Copyright &copy; 2014 | romeCode.com | <a href="mailto:roboromeski@me.com">E-mail Me!..</a> | <a href="jm/JeromeMoore.pdf" target="_blank">My Resume</a></p>
+                        <p class="copyright">Copyright &copy; 2014 | romeCode.com | <a href="mailto:roboromeski@me.com">E-mail Me!..</a> | </p>
                       </div>
                     </div>
                   </div>
@@ -272,8 +262,8 @@
                 deviceAgent.match(/ipod/i) ||
                 deviceAgent.match(/blackberry/i) ||
                 deviceAgent.match(/bada/i));
-
-                if (isTouchDevice) {
+                var stub = false;
+                if (!stub) {
                 $("video#bgvid").replaceWith( mobileback );
                 $("#menufade, #para, #parallax, #footer, .faze, #header, #home, #about, #base").fadeIn('fast');
 
@@ -301,12 +291,13 @@
 
                $('.roast').removeClass("faze").viewportChecker({
                classToAdd: 'visible animated tada',
-               offset: -1
+               offset: -80
                });
 
 
                $('.scrolltop').removeClass("hidden").viewportChecker({
-                classToAdd: 'visible animated fadeInUp'
+                classToAdd: 'visible animated fadeInUp',
+                offset: -80
                 });
 
            jQuery(function($){

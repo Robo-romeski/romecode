@@ -10,8 +10,6 @@
 
 
 body{
-
-  padding-top: 50px;
 }
 
  blockquote {
@@ -25,7 +23,7 @@ body{
 	background-color: rgba(0, 0, 255, 0.4);
 background: rgba(0, 0, 255, 0.4);
 /*color: rgba(0, 0, 255, 0.4);*/
-font-family: 'Bangers', cursive; 
+font-family: 'Bangers', cursive;
  background-size: 1440px 800px;
  background-repeat:no-repeat;
  display: compact;
@@ -53,16 +51,16 @@ font-size: 40px;
 }
 
 .base h3{
-    
+
     font-family: 'Calligraffitti', cursive;
-    
+
     color:#ffffff;
 text-shadow:4px 4px 8px #000000;
 font-size: 30px;
 }
 .base p{
      font-family: 'Ewert', cursive;
-     
+
 }
 .main h1{
 text-shadow:5px 5px 5px #000000;
@@ -84,7 +82,7 @@ background-size: cover;
 z-index: -1;
 }
 #cellbody {
-  padding-top: 0px; 
+  padding-top: 0px;
   background: url('/assets/img/romeintro.jpg') no-repeat center;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -106,31 +104,35 @@ z-index: -1;
 #headerback{
 background: url('/assets/img/paper1.png') repeat;
 }
-#menufade, .faze{
+.faze{
 display: none;
 }
-
+#menufade {
+  margin: 0;
+  z-index: 1;
+  margin:
+}
 /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(0,0,255,0.5); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: rgba(0,0,255,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(0,0,255,0.4); 
+    background: rgba(0,0,255,0.4);
 }
 
 .footer {
@@ -173,7 +175,7 @@ transform: rotate(0deg) scale(0.791) skew(360deg) translate(0px);
 -ms-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
 }
 
-#jumboOn{
+#jumboOn, .jumboOn{
 margin: 0 100px 0 100px;
 }
 
@@ -192,45 +194,60 @@ padding-right: 0px;
 
 }
 #parallax {
-   position:relative; 
-   overflow:hidden; 
-   width:100%; 
+   position:relative;
+   overflow:hidden;
+   width:100%;
    height:660px;
    background-image:url('assets/img/stars.jpg');
    background-size: 1400px 660px;
 }
 .parallax-viewport {
-   
+
     position: relative;     /* relative, absolute, fixed */
     overflow: hidden;
 }
 .parallax-layer {
     position: absolute;
 }
-#intro { 
-      
-      height: auto;  
-      margin: 0 auto; 
-        width: 100%; 
-        position: relative; 
+#intro {
+
+      height: 500px;
+      margin: 0 auto;
+        width: 100%;
+        position: relative;
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
         padding:0px;
     }
-    #home { 
-      background: url(assets/img/dark-wood.png) 50% 0 fixed; 
-      height: auto;  
-      margin: 0 auto; 
-        width: 100%; 
-        position: relative; 
+    .smoke {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .smokeMessage {
+      width: 100%; height:100%; position: absolute; top: 0; left: 0;
+    }
+    .smokeMessage *{padding:0.4em; margin:0}
+.smokeMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 }
+.smokeMessage h1{font-size: 2em;color:#ffffff;text-align:center;}
+.smokeMessage h2{font-size: 1.5em;color:#ffffff;text-align:center;}
+.smokeMessage h3{font-size: 1.2em;color:#ffffff;text-align:center;}
+    #home {
+      background: url(assets/img/dark-wood.png) 50% 0 fixed;
+      height: auto;
+      margin: 0 auto;
+        width: 100%;
+        position: relative;
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
         padding: 200px 0;
     }
-    #about { 
-      background: url(assets/img/webwhite.png) 100% 0 fixed repeat; 
+    #about {
+      background: url(assets/img/webwhite.png) 100% 0 fixed repeat;
       height: auto;
-      margin: 0 auto; 
-        width: 100%; 
-        position: relative; 
+      margin: 0 auto;
+        width: 100%;
+        position: relative;
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
         padding: 100px 0;
         color: #fff;
@@ -312,7 +329,7 @@ padding-right: 0px;
   /*  -webkit-transition: bottom 0.5s;
     transition: bottom 0.5s;
       animation:myfirst 5s;
-      -moz-animation:myfirst 5s infinite; 
+      -moz-animation:myfirst 5s infinite;
     -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */*/
 }
 
