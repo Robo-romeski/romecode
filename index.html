@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:url" content="http://www.romecode.com" /> 
+    <meta property="og:url" content="http://www.romecode.com" />
 <meta property="og:title" content="RomeCode.Com - Development at it's Finest. " />
-<meta property="og:description" content="Portfolio site for Jerome Moore, developed with technologies such as angular, bootstrap, node.js, Json CSS3 animations. Home to games of the future." /> 
-<meta property="og:image" content="assets/img/favicon.png" /> 
+<meta property="og:description" content="Portfolio site for Jerome Moore, developed with technologies such as angular, bootstrap, node.js, Json CSS3 animations. Home to games of the future." />
+<meta property="og:image" content="assets/img/favicon.png" />
     <link rel="shortcut icon" href="assets/img/favicon.png">
 
     <!-- Latest compiled and minified CSS -->
@@ -60,7 +60,7 @@
 }
 </style>
   </head>
-  
+
   <title>RomeCode</title>
     <video autoplay poster="assets/image/romeintro.jpg" id="bgvid">
     <source src="assets/videos/romeintro.mp4" type="video/mp4">
@@ -91,19 +91,19 @@
           </div><!--/.nav-collapse -->
         </div>
       </div>
-      
+
       <div class="container tron" id="intro">
         <div class="parallex-viewport">
           <div id="parallax" class="clear">
             <div class="parallax-layer" style="width:1300px; height:600px;">
               <img src="assets/img/city.png" style="width:600px; height:400px;"/>
             </div>
-            
+
             <div class="parallax-layer" style="width:1400px; height:620px;">
               <img src="assets/img/newcity.png" style="width:1400px; height:620px;"/>
             </div>
-            
-            
+
+
             <div class="parallax-layer" style="width:1000px; height:600px;">
               <img src="assets/img/planes.png" style="width:1400px; height:550px;"  />
             </div>
@@ -112,7 +112,7 @@
             </div>
             <div class="parallax-layer" style="width:1300px; height:650px;">
               <div class="jumbotron main spot">
-              <h1>Welcome to romeCode</h1>
+              <h1>Welcome to romeCode - New York's Leading Tech Consulting Company</h1>
               <p>Hello visitors. This is the first of many &#8220;final&#8221; touches; The product of a winning battle with procrastination, and
                 a re-infusion of creativity. This main feature is an ode to the artists of the world. I may know my way around a psd, but the extent of my visual creativity from scratch is stick-figurines (I know; Working on it). This is a mash-up of free creatives I have accumulated over the years; If you think it looks funny, then just consider it abstract art.  <i class="fa fa-smile-o fa-2"></i></p>
             </div>
@@ -126,15 +126,15 @@
   <div class="slide">
   </div>
         </div>
-        
+
         </div><!-- /.container -->
         <div class="clear"></div>
 
-        
+
          </div>
-        
+
     <section id="home" data-speed="4" data-type="background">
-      
+
       <div class="jumbotron post faze main" id="jumboOn">
   <h1>Under the Hood</h1>
   <p>Since joining the development community, I have been given the oppurtunity to be a part of some unique and novel oppurtunities. It has also been a double edged sword, as a condition of my involvement requires me signing non-disclousure agreements. It's like being those kids in the movie E.T.; Experiencing the most magical things and not being able to tell anyone about it - Motivating me to construct this frankenstein. This will serve as an interview of sorts for most people viewing, so I've &#8220;injected&#8221; quotes from books read (pun intended) that sum up my personality, work ethic, and just overall outlook on life. Created in a MEAN stack development enviornment with nothing but scalibility in mind, A custom Angular directive fetches json info to run the quote app, and manages the transitions. Javascript manages both the main and site parallax, Using Jquery's Viewport to manage the css transitions/animations. Intro video done in adobe premiere pro and aftereffects. I will give as much of a glimpse into the future projects and technologies used, as well as a progress bar for the time table. I will make them available as they launch to the public. </p>
@@ -145,7 +145,7 @@
           <section id="about" data-speed="2" data-type="background">
             <div class="container">
               <div class="row-fluid">
-               
+
                       <div class="modal fade" id="nita" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -157,7 +157,7 @@
         <p>jQuery, CSS3, bootstrap, php, html5video, social media tie-ins</p>
       </div>
       <div class="modal-footer">
-       
+
       </div>
     </div>
   </div>
@@ -174,7 +174,7 @@
         <p>jQuery, CSS3, bootstrap, parallax</p>
       </div>
       <div class="modal-footer">
-       
+
       </div>
     </div>
   </div>
@@ -191,7 +191,7 @@
   </div>
 
 </div>
-<p>A fan site for one of my oldest friends from primary school; she has a bunch of media that had to be sorted in a short amount of time to be available for an industry listening party. (I also managed her live-stream for the event).</p>
+<p>A fan site for Bonita the entertainer - she has a bunch of media that had to be centralized. </p>
           </div>
         </div>
       </div>
@@ -229,8 +229,8 @@
                     </div>
                   </div>
                 </section>
-            
-                 
+
+
                 <div class="scrolltop hidden footer" id="footer">
                   <div class="container">
                     <div class="row">
@@ -257,33 +257,34 @@
                 .parallax({
                 mouseport: $('#parallax')
                 });
-                $(".faze, #footer, #header, #parallax,#home, #about, #base").hide(0);
-                
+                $(".faze, #header, #parallax, #home, #about, #base").hide(0);
+                $(".footer").hide();
+
                 var mobileback = $("<img src='assets/img/romeintromobile.jpg' class='width:100%'></img>");
                 var deviceAgent = navigator.userAgent.toLowerCase();
 
-                var isTouchDevice = Modernizr.touch || 
+                var isTouchDevice = Modernizr.touch ||
                 (deviceAgent.match(/(iphone|ipod|ipad)/) ||
-                deviceAgent.match(/(android)/)  || 
-                deviceAgent.match(/(iemobile)/) || 
-                deviceAgent.match(/iphone/i) || 
-                deviceAgent.match(/ipad/i) || 
-                deviceAgent.match(/ipod/i) || 
-                deviceAgent.match(/blackberry/i) || 
+                deviceAgent.match(/(android)/)  ||
+                deviceAgent.match(/(iemobile)/) ||
+                deviceAgent.match(/iphone/i) ||
+                deviceAgent.match(/ipad/i) ||
+                deviceAgent.match(/ipod/i) ||
+                deviceAgent.match(/blackberry/i) ||
                 deviceAgent.match(/bada/i));
 
                 if (isTouchDevice) {
                 $("video#bgvid").replaceWith( mobileback );
                 $("#menufade, #para, #parallax, #footer, .faze, #header, #home, #about, #base").fadeIn('fast');
 
-                } 
+                }
                 else {
                 var ve = document.getElementById('bgvid');
                 if(ve != null && ve.addEventListener) {
                 ve.addEventListener(
                 'ended',
                 function() {
-                $("#menufade, #para, #parallax, .faze, #header, #home, #about, #base").fadeIn('slow');
+                $("#menufade, #para, #parallax, .faze, #header, #home, #about, #base, #footer").fadeIn('slow');
                 },
                 false);
                 }
@@ -292,7 +293,7 @@
                 $('.mini-menu').toggle("slow",2);
                 });
 
-               
+
                $('.post').removeClass("hidden").viewportChecker({
                classToAdd: 'visible animated rollIn',
                offset: -80
@@ -303,22 +304,18 @@
                offset: -1
                });
 
-               $(window).scroll(function() {
 
-               if ($('body').scrollTop()> 0)
-               {
                $('.scrolltop').removeClass("hidden").viewportChecker({
-                classToAdd: 'visible animated fadeInUp'              
+                classToAdd: 'visible animated fadeInUp'
                 });
-                }
-                });  
+
            jQuery(function($){
               $('.fTab').on('click', function(){
         $(this).toggleClass('active');
     });
 })
 
-             
+
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '703548336388176',
