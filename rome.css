@@ -5,8 +5,12 @@
 @import url('http://fonts.googleapis.com/css?family=Dosis:400,800');
 @import url('http://fonts.googleapis.com/css?family=Fugaz+One|Calligraffitti|Orbitron:400,900');
 @import url('http://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab|Libre+Barcode+39+Text');
 
-
+/*font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Josefin Slab', serif;*/
 
 
 body{
@@ -137,6 +141,7 @@ display: none;
 
 .footer {
   height: 150px;
+  margin: 0 auto;
  /* background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Safari 5.1 to 6.0 */
  /* background: -o-linear-gradient(right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Opera 11.1 to 12.0 */
  /*background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Firefox 3.6 to 15 */
@@ -145,7 +150,9 @@ display: none;
  background-color: white;
   border:0 solid #080808;
   border-top-width: 0px;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 40px;
+  /*font-family: 'Fugaz One', cursive;*/
   padding-top: 50px;
 }
 .spincycle a {
@@ -230,15 +237,22 @@ padding-right: 0px;
     }
     .smokeMessage *{padding:0.4em; margin:0}
 .smokeMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 }
-.smokeMessage h1{font-size: 2em;color:#ffffff;text-align:center;}
+.smokeMessage h1{font-size: 2em;color:#ffffff;text-align:center;
+  /*font-family: 'Libre Barcode 39 Text', cursive;*/
+  font-family: 'Josefin Sans', sans-serif;
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-family: 'Josefin Slab', serif;*/
+}
 .smokeMessage h2{font-size: 1.5em;color:#ffffff;text-align:center;}
 .smokeMessage h3{font-size: 1.2em;color:#ffffff;text-align:center;}
+video#video {
+  width: 100%;
+}
     #home {
       background: url(assets/img/dark-wood.png) 50% 0 fixed;
       height: auto;
       margin: 0 auto;
         width: 100%;
-        position: relative;
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
         padding: 200px 0;
     }
