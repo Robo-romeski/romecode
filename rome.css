@@ -155,6 +155,9 @@ display: none;
   /*font-family: 'Fugaz One', cursive;*/
   padding-top: 50px;
 }
+p.copyright {
+	text-align: center;
+}
 .spincycle a {
 transition:All 2s ease;
 -webkit-transition:All 2s ease;
