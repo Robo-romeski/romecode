@@ -260,7 +260,7 @@
                 $(".faze, #header, #parallax, #home, #about, #base").hide(0);
                 $(".footer").hide();
 
-                var mobileback = $("<img src='assets/img/romeintromobile.jpg' class='width:100%'></img>");
+                // var mobileback = $("<img src='assets/img/romeintromobile.jpg' class='width:100%; z-index: 100; '></img>");
                 var deviceAgent = navigator.userAgent.toLowerCase();
 
                 var isTouchDevice = Modernizr.touch ||
@@ -274,7 +274,7 @@
                 deviceAgent.match(/bada/i));
 
                 if (isTouchDevice) {
-                $("video#bgvid").replaceWith( mobileback );
+                // $("video#bgvid").replaceWith( mobileback );
                 $("#menufade, #para, #parallax, #footer, .faze, #header, #home, #about, #base").fadeIn('fast');
 
                 }
