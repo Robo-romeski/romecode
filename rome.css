@@ -15,7 +15,10 @@ font-family: 'Josefin Slab', serif;*/
 
 body{
 }
-
+h1 {
+  font-size: 5em;color:#ffffff;text-align:center;
+  font-family: 'Josefin Slab', serif;
+}
  blockquote {
     margin: 0;
     padding: 0;
@@ -24,14 +27,14 @@ body{
     vertical-align: baseline;
 }
 .main {
-	background-color: rgba(0, 0, 255, 0.4);
-background: rgba(0, 0, 255, 0.4);
+	background-color: rgba(255,255,255, 0.4);
+/*background: rgba(0, 0, 255, 0.4);*/
 /*color: rgba(0, 0, 255, 0.4);*/
 font-family: 'Bangers', cursive;
  background-size: 1440px 800px;
  background-repeat:no-repeat;
  display: compact;
- z-index: 1000000;
+ z-index: 1;
  color:white;
 }
 
@@ -113,8 +116,7 @@ display: none;
 }
 #menufade {
   margin: 0;
-  z-index: 1;
-  margin:
+  z-index: 100;
 }
 /* Let's get this party started */
 ::-webkit-scrollbar {
@@ -186,9 +188,15 @@ transform: rotate(0deg) scale(0.791) skew(360deg) translate(0px);
 }
 
 #jumboOn, .jumboOn{
-margin: 0 100px 0 100px;
+margin: 50px 100px 100px 100px;
+}
+.padthai{
+  padding: 1%;
 }
 
+.bragging{
+background-image: url("./assets/img/web.png");
+}
 
 #scrollContent{
   height:186px;
@@ -220,34 +228,97 @@ padding-right: 0px;
     position: absolute;
 }
 #intro {
-
-      height: 500px;
       margin: 0 auto;
         width: 100%;
-        position: relative;
-        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+        /*height: 500px;*/
+        display: block;
+        /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
         padding:0px;
+
     }
     .smoke {
       width: 100%;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: auto;
+
     }
     .smokeMessage {
-      width: 100%; height:100%; position: absolute; top: 0; left: 0;
+      width: 100%;
+      position: absolute; top: 0; left: 0;
+      margin-top:70px;
+      text-align: center;
+      display: inline-block;
     }
-    .smokeMessage *{padding:0.4em; margin:0}
-.smokeMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 }
-.smokeMessage h1{font-size: 2em;color:#ffffff;text-align:center;
+    /*.smokeMessage *{padding:0.4em; margin:0}*/
+.smokeMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99;
+  /*background: rgba(255,255,255,0.6);*/
+}
+.smokeMessage h1{font-size: 5em;color:#ffffff;text-align:center;
   /*font-family: 'Libre Barcode 39 Text', cursive;*/
-  font-family: 'Josefin Sans', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
   /*font-family: 'Amatic SC', cursive;*/
-  /*font-family: 'Josefin Slab', serif;*/
+  font-family: 'Josefin Slab', serif;
 }
 .smokeMessage h2{font-size: 1.5em;color:#ffffff;text-align:center;}
 .smokeMessage h3{font-size: 1.2em;color:#ffffff;text-align:center;}
+.smokeMessage p{font-size: 1.2em;color:#ffffff;text-align:center;padding:50px 100px;}
+
+.smokeIconContainer {
+  /*margin-top: 40px;
+  padding-top: 20px;*/
+  /*padding-bottom: 40px;*/
+}
+
+.smokeIconContainer i {
+      border: 1px solid cornflowerblue;
+      background: black;
+      padding: 30px;
+      border-radius: 80px;
+      margin: 20px;
+      min-width: 130px;
+      text-align: center;
+      box-shadow: 10px 10px 5px #888888;
+}
+
+@media all and (max-width:800px){
+  .smokeMessage h1 {
+    font-size: 4em;
+  }
+  .smokeMessage p {
+    /*padding: 0;*/
+    display: none;
+  }
+}
+
+ @media all and (max-width:468px) {
+   .smokeMessage h1 {
+     /*font-size: 1em;*/
+     /*display: none;*/
+   }
+   .smokeMessage p {
+     font-size: inherit;
+   }
+   .footer {
+     height: 100%;
+
+   }
+ }
+
+ @media all and (min-width:1000px) {
+.smoke {
+  height: 500px;
+  overflow: hidden;
+}
+ }
+.smokeIcons {
+
+}
+.floss-points {
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
 video#video {
   width: 100%;
 }
@@ -257,10 +328,28 @@ video#video {
       margin: 0 auto;
         width: 100%;
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
-        padding: 200px 0;
+        /*padding: 200px 0;*/
     }
+    #home h1 {
+      padding-top: 1%;
+    }
+
+      .romecode {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+        background: url('assets/img/romeintro.jpg') no-repeat center top;
+        background-size: cover;
+        z-index: -100;
+      }
     #about {
-      background: url(assets/img/webwhite.png) 100% 0 fixed repeat;
+      /*background: url(assets/img/sumin.png) 100% 0 fixed repeat;*/
+      background-color: white;
       height: auto;
       margin: 0 auto;
         width: 100%;
@@ -338,16 +427,16 @@ video#video {
 }
 
 .fTab {
-     position: absolute;
+     /*position: absolute;
     left: 0;
     bottom: 0;
     padding: 1em;
-    background-color: white;
+    background-color: white;*/
   /*  -webkit-transition: bottom 0.5s;
     transition: bottom 0.5s;
       animation:myfirst 5s;
       -moz-animation:myfirst 5s infinite;
-    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */*/
+    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
 }
 
 .fTab.active {
