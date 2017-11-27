@@ -91,17 +91,6 @@ z-index: -1;
   background-size: 100%;
   color: #000000;
 }
-#headlogo {
-	font-family: 'Press Start 2P', cursive;
-    color: #ffffff;
-    padding:0px;
-    word-wrap: break-word;
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
 #headerback{
 background: url('/assets/img/paper1.png') repeat;
 }
@@ -109,6 +98,8 @@ background: url('/assets/img/paper1.png') repeat;
 display: none;
 }
 #menufade {
+  /*background: url(/assets/img/wall-light.png) repeat;*/
+  background-color: rgba(255,255,255,0.5);
   margin: 0;
   z-index: 100;
 }
@@ -221,7 +212,7 @@ padding-right: 0px;
   /*background: rgba(255,255,255,0.6);*/
 }
 .smokeMessage h1{font-size: 5em;color:#ffffff;text-align:center;
-  margin-top: 5%;
+  margin-top: 6%;
   /*font-family: 'Libre Barcode 39 Text', cursive;*/
   /*font-family: 'Josefin Sans', sans-serif;*/
   /*font-family: 'Amatic SC', cursive;*/
