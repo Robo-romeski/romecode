@@ -91,6 +91,17 @@ z-index: -1;
   background-size: 100%;
   color: #000000;
 }
+#headlogo {
+	font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    padding:0px;
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
 #headerback{
 background: url('/assets/img/paper1.png') repeat;
 }
