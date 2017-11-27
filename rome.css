@@ -205,7 +205,7 @@ padding-right: 0px;
 
     .smoke {
       background-color: black;
-      height: 500px;
+      height: 450px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -218,15 +218,12 @@ padding-right: 0px;
       text-align: center;
       display: inline-block;
     }
-    /*.smokeMessage *{padding:0.4em; margin:0}*/
+
 .smokeMessageEffect {text-shadow: 2px 2px 2px #000000; color:white;z-index:99;
   /*background: rgba(255,255,255,0.6);*/
 }
 .smokeMessage h1{font-size: 5em;color:#ffffff;text-align:center;
   margin-top: 6%;
-  /*font-family: 'Libre Barcode 39 Text', cursive;*/
-  /*font-family: 'Josefin Sans', sans-serif;*/
-  /*font-family: 'Amatic SC', cursive;*/
   font-family: 'Josefin Slab', serif;
 }
 .smokeMessage h2{font-size: 1.5em;color:#ffffff;text-align:center;}
@@ -237,9 +234,6 @@ font-family: 'Raleway', sans-serif;
 
 .smokeIconContainer {
   text-align: center;
-  /*margin-top: 40px;
-  padding-top: 20px;*/
-  /*padding-bottom: 40px;*/
 }
 
 .smokeIconContainer i {
@@ -255,12 +249,11 @@ font-family: 'Raleway', sans-serif;
 
 @media all and (max-width:800px){
   .smokeMessage h1 {
-    margin-top: 7%;
+    margin-top: 10%;
     font-size: 4em;
   }
   .smokeMessage p {
     padding: 20px;
-    /*display: none;*/
   }
 
   .footer {
@@ -275,26 +268,19 @@ font-family: 'Raleway', sans-serif;
    }
    .smokeMessage h1 {
      font-size: 3em;
-     /*display: none;*/
    }
    .smokeMessage p {
      font-size: inherit;
    }
 
- }
-
-
- @media all and (min-width:1000px) {
-/*.smoke {
-  height: 500px;
-  overflow: hidden;
-}*/
+   #jumboOn, .jumboOn {
+     margin: 50px;
+   }
 
  }
-.smokeIcons {
 
-}
 .floss-points {
+  text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   color: black;
 }
@@ -303,11 +289,10 @@ video#video {
 }
     #home {
       background: url(assets/img/dark-wood.png) 50% 0 fixed;
-      height: auto;
+      height: 100%;
       margin: 0 auto;
         width: 100%;
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
-        /*padding: 200px 0;*/
     }
     #home h1 {
       padding-top: 1%;
@@ -327,7 +312,6 @@ video#video {
         z-index: -100;
       }
     #about {
-      /*background: url(assets/img/sumin.png) 100% 0 fixed repeat;*/
       background-color: white;
       height: auto;
       margin: 0 auto;
@@ -405,29 +389,6 @@ video#video {
   margin-top:50px;
 }
 
-.fTab {
-     /*position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 1em;
-    background-color: white;*/
-  /*  -webkit-transition: bottom 0.5s;
-    transition: bottom 0.5s;
-      animation:myfirst 5s;
-      -moz-animation:myfirst 5s infinite;
-    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
-}
-
-.fTab.active {
-    bottom: 0px;
-    z-index: 100;
-    background-color: gray;
-}
-
-.fTab.active + #slide {
-    max-height: 300px;
-    z-index: 100;
-}
 #well{
   background: black;
 }
@@ -447,19 +408,3 @@ video#video {
 .modal-title, .modal-body{
   color:blue;
 }
-
-
-
- @-moz-keyframes myfirst /* Firefox */
-    {
-    0%   {background:gray;}
-    50%  {background:white;}
-    100%   {background:black;}
-    }
-
-        @-webkit-keyframes myfirst /* Safari and Chrome */
-    {
-    0%   {background:gray;}
-    50%  {background:white;}
-    100%   {background:black;}
-    }
