@@ -1,4 +1,3 @@
-@import url('http://fonts.googleapis.com/css?family=Lato');
 @import url('http://fonts.googleapis.com/css?family=Press+Start+2P:400,700,900');
 @import url('http://fonts.googleapis.com/css?family=Megrim');
 @import url('http://fonts.googleapis.com/css?family=Ewert:400,700,900');
@@ -6,12 +5,7 @@
 @import url('http://fonts.googleapis.com/css?family=Fugaz+One|Calligraffitti|Orbitron:400,900');
 @import url('http://fonts.googleapis.com/css?family=Bangers');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab|Libre+Barcode+39+Text');
-
-/*font-family: 'Libre Barcode 39 Text', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Amatic SC', cursive;
-font-family: 'Josefin Slab', serif;*/
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body{
 }
@@ -30,7 +24,7 @@ h1 {
 	background-color: rgba(255,255,255, 0.4);
 /*background: rgba(0, 0, 255, 0.4);*/
 /*color: rgba(0, 0, 255, 0.4);*/
-font-family: 'Bangers', cursive;
+font-family: 'Raleway', sans-serif;
  background-size: 1440px 800px;
  background-repeat:no-repeat;
  display: compact;
@@ -144,66 +138,19 @@ display: none;
 .footer {
   height: 150px;
   margin: 0 auto;
- /* background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Safari 5.1 to 6.0 */
- /* background: -o-linear-gradient(right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Opera 11.1 to 12.0 */
- /*background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* For Firefox 3.6 to 15 */
- /* background: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,255,0.8)); /* Standard syntax (must be last) */
- /* background-color:transparent;*/
  background-color: white;
   border:0 solid #080808;
   border-top-width: 0px;
   font-family: 'Libre Barcode 39 Text', cursive;
   font-size: 40px;
-  /*font-family: 'Fugaz One', cursive;*/
   padding-top: 50px;
 }
 p.copyright {
 	text-align: center;
 }
-.spincycle a {
-transition:All 2s ease;
--webkit-transition:All 2s ease;
--moz-transition:All 2s ease;
--o-transition:All 2s ease;
-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
--webkit-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
--moz-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
--o-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
--ms-transform: rotate(0deg) scale(0.791) skew(0deg) translate(0px);
-}
-.spincycle a:hover{
-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
--webkit-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
--moz-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
--o-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
--ms-transform: rotate(360deg) scale(1) skew(0deg) translate(0px);
-}
-
-.nav .navbar-nav .navbar-right .spincycle a:hover{
-transform: rotate(0deg) scale(0.791) skew(360deg) translate(0px);
--webkit-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
--moz-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
--o-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
--ms-transform: rotate(0deg) scale(1) skew(360deg) translate(0px);
-}
-
 #jumboOn, .jumboOn{
 margin: 50px 100px 100px 100px;
 }
-.padthai{
-  padding: 1%;
-}
-
-.bragging{
-background-image: url("./assets/img/web.png");
-}
-
-#scrollContent{
-  height:186px;
-  overflow:auto;
-  position:relative;
-}
-
 .tron{
   width: 100%;
 padding-left: 0px;
@@ -234,28 +181,47 @@ padding-right: 0px;
         display: block;
         /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
         padding:0px;
-
     }
+
+  .smokeMove {
+  height: 100%;
+  background: url("./assets/img/basspixel.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  -webkit-animation-name: backgroundEffect;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgroundEffect {
+  0% {background-position: 0% 0%}
+  25% {background-position: 30% 10%}
+  50% {background-position: 0 30%}
+  75% {background-position: 30% 30%}
+  100% {background-position: 0% 0%}
+}
+
     .smoke {
+      background-color: black;
+      height: 500px;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: auto;
-
     }
     .smokeMessage {
       width: 100%;
       position: absolute; top: 0; left: 0;
-      margin-top:70px;
       text-align: center;
       display: inline-block;
     }
     /*.smokeMessage *{padding:0.4em; margin:0}*/
-.smokeMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99;
+.smokeMessageEffect {text-shadow: 2px 2px 2px #000000; color:white;z-index:99;
   /*background: rgba(255,255,255,0.6);*/
 }
 .smokeMessage h1{font-size: 5em;color:#ffffff;text-align:center;
+  margin-top: 5%;
   /*font-family: 'Libre Barcode 39 Text', cursive;*/
   /*font-family: 'Josefin Sans', sans-serif;*/
   /*font-family: 'Amatic SC', cursive;*/
@@ -263,9 +229,12 @@ padding-right: 0px;
 }
 .smokeMessage h2{font-size: 1.5em;color:#ffffff;text-align:center;}
 .smokeMessage h3{font-size: 1.2em;color:#ffffff;text-align:center;}
-.smokeMessage p{font-size: 1.2em;color:#ffffff;text-align:center;padding:50px 100px;}
+.smokeMessage p{font-size: 1.2em;color:#ffffff;text-align:center;padding:50px 100px;
+font-family: 'Raleway', sans-serif;
+}
 
 .smokeIconContainer {
+  text-align: center;
   /*margin-top: 40px;
   padding-top: 20px;*/
   /*padding-bottom: 40px;*/
@@ -284,33 +253,41 @@ padding-right: 0px;
 
 @media all and (max-width:800px){
   .smokeMessage h1 {
+    margin-top: 7%;
     font-size: 4em;
   }
   .smokeMessage p {
-    /*padding: 0;*/
-    display: none;
+    padding: 20px;
+    /*display: none;*/
+  }
+
+  .footer {
+    height: 100%;
+
   }
 }
 
  @media all and (max-width:468px) {
+   .smokeMessage {
+     margin-top: 7%;
+   }
    .smokeMessage h1 {
-     /*font-size: 1em;*/
+     font-size: 3em;
      /*display: none;*/
    }
    .smokeMessage p {
      font-size: inherit;
    }
-   .footer {
-     height: 100%;
 
-   }
  }
 
+
  @media all and (min-width:1000px) {
-.smoke {
+/*.smoke {
   height: 500px;
   overflow: hidden;
-}
+}*/
+
  }
 .smokeIcons {
 
@@ -355,7 +332,7 @@ video#video {
         width: 100%;
         position: relative;
         box-shadow: 0 0 50px rgba(0,0,0,0.8);
-        padding: 100px 0;
+        padding: 60px 0;
         color: #fff;
     }
     .hidden{

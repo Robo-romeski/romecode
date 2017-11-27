@@ -16,15 +16,11 @@ Home to games and apps of the future." />
     <script type="text/javascript" src="assets/js/modernizr.js"></script>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/fa/font-awesome.css"> -->
     <link rel="stylesheet" type="text/css" href="rome.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
-    <!-- jQuery Plugin -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 <script src="https://use.fontawesome.com/91fac9544b.js"></script>
 <!-- Preloader -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     //<![CDATA[
         $(window).load(function() { // makes sure the whole site is loaded
             $('#status').fadeOut(); // will first fade out the loading animation
@@ -32,40 +28,41 @@ Home to games and apps of the future." />
             $('body').delay(350).css({'overflow':'visible'});
         })
     //]]>
-</script> -->
+</script>
 <style>
-  /*body {
+  body {
     overflow: hidden;
-}*/
+}
 
 /* Preloader */
-/*#preloader {
+#preloader {
     position: fixed;
     top:0;
     left:0;
     right:0;
     bottom:0;
     background-color:#fff;
-    /* change if the mask should have another color then white */
-    /*z-index:99; */
+    z-index: 199;
+    /* change if the mask should have another color then white
+    z-index:99;
     /* makes sure it stays on top */
 }
 
-/*#status {
+#status {
     width:200px;
     height:200px;
     position:absolute;
-    /*left:50%; */
+    left:50%;
     /* centers the loading animation horizontally one the screen */
-    /*top:50%; */
+    top:50%;
     /* centers the loading animation vertically one the screen */
-    /*background-image:url(assets/img/box.gif); */
+    background-image:url(assets/img/box.gif);
     /* path to your loading animation */
-    /*background-repeat:no-repeat;
-    background-position:center;*/
-    /*margin:-100px 0 0 -100px; */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px;
     /* is width and height divided by two */
-/*}*/
+}
 </style>
   </head>
 
@@ -78,7 +75,10 @@ Home to games and apps of the future." />
   </video> -->
   <body ng-app="quoteApp">
   <!-- Preloader -->
-
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div>
+  <!-- end preloader -->
     <div class="navbar navbar-fixed-top" id="menufade">
 
         <div class="navbar-header">
@@ -91,9 +91,6 @@ Home to games and apps of the future." />
         </div>
         <div class="navbar-collapse collapse mini-menu">
           <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="https://www.linkedin.com/pub/jerome-moore/20/b36/31b" target="_blank"><i class="fa fa-linkedin-square icon-4x spin"></i></a></li>
-            <li><a href="https://github.com/Robo-romeski" target="_blank"><i class="fa fa-github-alt icon-4x"></i></a></li>
-            <li><a href="skype:jerome_0_moore?add"><i class="fa fa-skype icon-4x"></i></a></li> -->
           </ul>
           </div><!--/.nav-collapse -->
 
@@ -101,12 +98,12 @@ Home to games and apps of the future." />
 
 
       <div class="container" id="intro">
-        <div class="smoke">
-          <video  id="video" autoplay>
+        <div class="smoke smokeMove">
+          <!-- <video  id="video" autoplay>
             <source src="assets/videos/smoke.mp4" type="video/mp4"></source>
-          </video>
-        </div>
-        <div class="smokeMessage">
+          </video> -->
+
+        <div class="smokeMessage smokeMessageEffect">
 
           <h1>BUILDING YOUR VISION THROUGH TECH</h1>
           <p>We create an optimal fusion between business strategy and vision in IT, <br>
@@ -114,6 +111,7 @@ Home to games and apps of the future." />
             Helping you navigate through the fog. Our goal is to get you to a place of independence with your project -
               no matter where you are in terms of technical expertise.</p>
         </div>
+      </div>
         </div><!-- /.container -->
         <div class="clear"></div>
         <!-- <span class="fTab" id="base"><img src="assets/img/outline.png" width="50" height="50"><div
@@ -129,8 +127,8 @@ data-width="200">
             <div class="container">
               <div class="row-fluid">
 
-                <div class="col-lg-3 col-md-3 roast">
-                  <div class="smokeIconContainer">
+                <div class="col-lg-3 col-md-3">
+                  <div class="smokeIconContainer roast">
                   <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
                 </div>
                 <div class="floss-points">
@@ -146,10 +144,10 @@ data-width="200">
                   <p> We take on every project from a phlegmatic position and agnostic thinking - to ensure your target audience shares your passion for your project.</p>
                 </div>
               </div>
-                <div class="col-lg-3 col-md-3 roast">
+                <div class="col-lg-3 col-md-3">
                   <div class="smokeIconContainer roast">
                   <i class="fa fa-microchip fa-5x" aria-hidden="true"></i>
-                </div><div class="floss-points roast">
+                </div><div class="floss-points">
                   <h3>Bits and Bytes</h3>
                   <p>We are a full service Dev Shop, covering all needs from UI-UX, Web/Mobile Applications, AR/VR, To large scale DevOps, Networking, VoIP services, ensuring we use the right technology for the job all the time. </p>
                 </div>
@@ -158,8 +156,8 @@ data-width="200">
                   <div class="smokeIconContainer roast">
                   <i class="fa fa-thermometer-three-quarters fa-5x" aria-hidden="true"></i>
                 </div>
-                <div class="floss-points roast">
-                  <h3>Gaging the tempurature of the market</h3>
+                <div class="floss-points">
+                  <h3>Gaging the temperature of the market</h3>
                   <p>With thorough market research, we see how you idea fits in the marketplace.Protecting your niche in the world - no matter the competition.</p>
                 </div>
               </div>
@@ -171,7 +169,7 @@ data-width="200">
 
               <section id="home" data-speed="4" data-type="background">
 <h1>What we bring to the table</h1>
-                            <div class="jumbotron post faze main" id="jumboOn">
+                            <div class="jumbotron post main smokeMessageEffect" id="jumboOn">
 
                               <div class="row">
                                 <div class="col-md-3 col-sm-3">
@@ -205,33 +203,15 @@ data-width="200">
                 .parallax({
                 mouseport: $('#parallax')
                 });
-                // $(".faze, #header, #parallax, #home, #about, #base").hide(0);
-                // $(".footer").hide();
+
                 var deviceAgent = navigator.userAgent.toLowerCase();
 
-               $('.post').removeClass("hidden").viewportChecker({
-               classToAdd: 'visible animated rollIn',
-               offset: 100,
-               callbackFunction: function(){
-                 console.log('post hitting');
-               },
-               });
-
                $('.roast').removeClass("faze").viewportChecker({
-               classToAdd: 'visible animated tada',
-               offset: -100,
-               callbackFunction: function(){
-                 console.log('roast hitting');
-               },
+               classToAdd: 'visible animated pulse',
+               offset: -70
                });
 
-               $('.scrolltop').removeClass("hidden").viewportChecker({
-                classToAdd: 'visible animated fadeInUp',
-                offset: 100,
-                callbackFunction: function(){
-                  console.log('scroll topped off');
-                },
-                });
+
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '703548336388176',
