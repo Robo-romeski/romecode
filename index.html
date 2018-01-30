@@ -1,214 +1,230 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:url" content="http://www.romecode.com" />
-<meta property="og:title" content="RomeCode.Com - Development at it's Finest. " />
-<meta property="og:description" content="
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:url" content="http://www.romecode.com" />
+  <meta property="og:title" content="RomeCode.Com - Development at it's Finest. " />
+  <meta property="og:description" content="
 development with technologies such as angular, react, bootstrap, node.js, Json CSS3 animations.
 Home to games and apps of the future." />
-<meta property="og:image" content="assets/img/favicon.png" />
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+  <meta property="og:image" content="assets/img/favicon.png" />
+  <link rel="shortcut icon" href="assets/img/favicon.png">
 
-    <!-- Latest compiled and minified CSS -->
-    <script type="text/javascript" src="assets/js/modernizr.js"></script>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="rome.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-<script src="https://use.fontawesome.com/91fac9544b.js"></script>
-<!-- Preloader -->
-<script type="text/javascript">
+  <!-- Latest compiled and minified CSS -->
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="rome.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="https://use.fontawesome.com/91fac9544b.js"></script>
+  <!-- Preloader -->
+  <script type="text/javascript">
     //<![CDATA[
-        $(window).load(function() { // makes sure the whole site is loaded
-            $('#status').fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            $('body').delay(350).css({'overflow':'visible'});
-        })
+    $(window).load(function () { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({ 'overflow': 'visible' });
+    })
     //]]>
-</script>
-<style>
-  body {
-    overflow: hidden;
-}
+  </script>
+  <style>
+    body {
+      overflow: hidden;
+    }
 
-/* Preloader */
-#preloader {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:#fff;
-    z-index: 199;
-    /* change if the mask should have another color then white
+    /* Preloader */
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 199;
+      /* change if the mask should have another color then white
     /* makes sure it stays on top */
-}
-#status {
-    width:200px;
-    height:200px;
-    position:absolute;
-    left:50%;
-    /* centers the loading animation horizontally one the screen */
-    top:50%;
-    /* centers the loading animation vertically one the screen */
-    background-image:url(assets/img/box.gif);
-    /* path to your loading animation */
-    background-repeat:no-repeat;
-    background-position:center;
-    margin:-100px 0 0 -100px;
-    /* is width and height divided by two */
-}
-</style>
-  </head>
+    }
 
-  <title>RomeCode</title>
-  <div class='romecode'></div>
-  <body ng-app="quoteApp">
+    #status {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      /* centers the loading animation horizontally one the screen */
+      top: 50%;
+      /* centers the loading animation vertically one the screen */
+      background-image: url(assets/img/box.gif);
+      /* path to your loading animation */
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: -100px 0 0 -100px;
+      /* is width and height divided by two */
+    }
+  </style>
+</head>
+
+<title>RomeCode</title>
+<div class='romecode'></div>
+
+<body>
   <!-- Preloader -->
   <div id="preloader">
-      <div id="status">&nbsp;</div>
+    <div id="status">&nbsp;</div>
   </div>
   <!-- end preloader -->
-    <div class="navbar navbar-fixed-top" id="menufade">
+  <div class="navbar navbar-fixed-top" id="menufade">
 
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html" id="headlogo"><img src="assets/img/romecode.png" height="50px;" width="200px"></a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html" id="headlogo">
+        <img src="assets/img/romecode.png" height="50px;" width="200px">
+      </a>
+    </div>
+    <div class="navbar-collapse collapse mini-menu">
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+
+  </div>
+
+
+  <div class="container" id="intro">
+    <div class="smoke smokeMove">
+      <div class="smokeMessage smokeMessageEffect">
+
+        <h1>BUILDING YOUR VISION THROUGH TECH</h1>
+        <p>We create an optimal fusion between business strategy and vision in IT,
+          <br> Bringing direction and feasibility as a mindset to your projects - Helping you navigate through the fog. Our goal
+          is to get you to a place of independence with your project - no matter where you are in terms of technical expertise.</p>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+  <div class="clear"></div>
+  </div>
+
+  <section id="about" data-speed="2" data-type="background">
+    <div class="container">
+      <div class="row-fluid">
+
+        <div class="col-lg-3 col-md-3">
+          <div class="smokeIconContainer roast">
+            <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="floss-points">
+            <h3>Bringing ideas to your ideas</h3>
+            <p>We empower you by bringing feasibility, implementation, and monitization to your ideas - assisting in developing
+              an MVP you can be proud of.</p>
+          </div>
         </div>
-        <div class="navbar-collapse collapse mini-menu">
-          <ul class="nav navbar-nav navbar-right">
-          </ul>
-          </div><!--/.nav-collapse -->
-
+        <div class="col-lg-3 col-md-3">
+          <div class="smokeIconContainer roast">
+            <i class="fa fa-wpexplorer fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="floss-points">
+            <h3>Foresight into un-chartered territories</h3>
+            <p> We take on every project from a phlegmatic position and agnostic thinking - to ensure your target audience shares
+              your passion for your project.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <div class="smokeIconContainer roast">
+            <i class="fa fa-microchip fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="floss-points">
+            <h3>Bits and Bytes</h3>
+            <p>We are a full service Dev Shop, covering all needs from UI-UX, Web/Mobile Applications, AR/VR, To large scale
+              DevOps, Networking, VoIP services, ensuring we use the right technology for the job all the time. </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <div class="smokeIconContainer roast">
+            <i class="fa fa-thermometer-three-quarters fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="floss-points">
+            <h3>Gaging the temperature of the market</h3>
+            <p>With thorough market research, we see how you idea fits in the marketplace.Protecting your niche in the world
+              - no matter the competition.</p>
+          </div>
+        </div>
       </div>
 
+    </div>
 
-      <div class="container" id="intro">
-        <div class="smoke smokeMove">
-        <div class="smokeMessage smokeMessageEffect">
+  </section>
 
-          <h1>BUILDING YOUR VISION THROUGH TECH</h1>
-          <p>We create an optimal fusion between business strategy and vision in IT, <br>
-            Bringing direction and feasibility as a mindset to your projects -
-            Helping you navigate through the fog. Our goal is to get you to a place of independence with your project -
-              no matter where you are in terms of technical expertise.</p>
+  <section id="home" data-speed="4" data-type="background">
+    <h1>What we bring to the table</h1>
+    <div class="jumbotron post main smokeMessageEffect" id="jumboOn">
+
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <h4>10+ years practical experience with various technologies</h4>
         </div>
+        <div class="col-md-3 col-sm-3">
+          <h4>12+ major media campaigns including print, social, and digital media</h4>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <h4>40,000+ hours of consulting, planning, and development</h4>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <h4>Flexibility amongst tech stacks in both production and development</h4>
+        </div>
+
       </div>
-        </div><!-- /.container -->
-        <div class="clear"></div>
-         </div>
+    </div>
 
-          <section id="about" data-speed="2" data-type="background">
-            <div class="container">
-              <div class="row-fluid">
+  </section>
 
-                <div class="col-lg-3 col-md-3">
-                  <div class="smokeIconContainer roast">
-                  <i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i>
-                </div>
-                <div class="floss-points">
-                  <h3>Bringing ideas to your ideas</h3>
-                  <p>We empower you by bringing feasibility, implementation, and monitization to your ideas - assisting in developing an MVP you can be proud of.</p>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                  <div class="smokeIconContainer roast">
-                  <i class="fa fa-wpexplorer fa-5x" aria-hidden="true"></i>
-                </div><div class="floss-points">
-                  <h3>Foresight into un-chartered territories</h3>
-                  <p> We take on every project from a phlegmatic position and agnostic thinking - to ensure your target audience shares your passion for your project.</p>
-                </div>
-              </div>
-                <div class="col-lg-3 col-md-3">
-                  <div class="smokeIconContainer roast">
-                  <i class="fa fa-microchip fa-5x" aria-hidden="true"></i>
-                </div><div class="floss-points">
-                  <h3>Bits and Bytes</h3>
-                  <p>We are a full service Dev Shop, covering all needs from UI-UX, Web/Mobile Applications, AR/VR, To large scale DevOps, Networking, VoIP services, ensuring we use the right technology for the job all the time. </p>
-                </div>
-              </div>
-                <div class="col-lg-3 col-md-3">
-                  <div class="smokeIconContainer roast">
-                  <i class="fa fa-thermometer-three-quarters fa-5x" aria-hidden="true"></i>
-                </div>
-                <div class="floss-points">
-                  <h3>Gaging the temperature of the market</h3>
-                  <p>With thorough market research, we see how you idea fits in the marketplace.Protecting your niche in the world - no matter the competition.</p>
-                </div>
-              </div>
-                </div>
+  <div class="footer" id="footer">
+    <p class="copyright">Copyright - 2014 RomeCode.com
+      <a href="mailto:info@romecode.com">E-mail Me</a>
+    </p>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.viewportchecker.js"></script>
+  <script type="text/javascript" src="assets/js/init.js"></script>
+  <script>
+    $('#parallax .parallax-layer')
+      .parallax({
+        mouseport: $('#parallax')
+      });
 
-                    </div>
+    var deviceAgent = navigator.userAgent.toLowerCase();
 
-                </section>
-
-              <section id="home" data-speed="4" data-type="background">
-<h1>What we bring to the table</h1>
-                            <div class="jumbotron post main smokeMessageEffect" id="jumboOn">
-
-                              <div class="row">
-                                <div class="col-md-3 col-sm-3">
-                                  <h4>10+ years practical experience with various technologies</h4>
-                                </div>
-                                <div class="col-md-3 col-sm-3">
-                                  <h4>12+ major media campaigns including print, social, and digital media</h4>
-                                </div>
-                                <div class="col-md-3 col-sm-3">
-                                  <h4>40,000+ hours of consulting, planning, and development</h4>
-                                </div>
-                                <div class="col-md-3 col-sm-3">
-                                  <h4>Flexibility amongst tech stacks in both production and development</h4>
-                                </div>
-
-                              </div>
-                      </div>
-
-                                </section>
-
-                <div class="footer" id="footer">
-                        <p class="copyright">Copyright - 2014  RomeCode.com  <a href="mailto:info@romecode.com">E-mail Me</a> </p>
-                </div>
-                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-                <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.js"></script>
-                <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
-                <script type="text/javascript" src="assets/js/jquery.viewportchecker.js"></script>
-                <script type="text/javascript" src="assets/js/init.js"></script>
-                <script>
-                $('#parallax .parallax-layer')
-                .parallax({
-                mouseport: $('#parallax')
-                });
-
-                var deviceAgent = navigator.userAgent.toLowerCase();
-
-               $('.roast').removeClass("faze").viewportChecker({
-               classToAdd: 'visible animated pulse',
-               offset: -70
-               });
+    $('.roast').removeClass("faze").viewportChecker({
+      classToAdd: 'visible animated pulse',
+      offset: -70
+    });
 
 
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '703548336388176',
-          xfbml      : true,
-          version    : 'v2.0'
-        });
-      };
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '703548336388176',
+        xfbml: true,
+        version: 'v2.0'
+      });
+    };
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-</script>
-              </body>
-            </html>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+
+</html>
