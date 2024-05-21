@@ -108,9 +108,16 @@ background: url('/assets/img/paper1.png') repeat;
 .faze{
 display: none;
 }
+
+.statement {
+  font-family: 'Josefin Slab', cursive;
+  padding-right: 5%;
+  color: #000;
+}
+
 #menufade {
   /*background: url(/assets/img/wall-light.png) repeat;*/
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255);
   margin: 0;
   z-index: 100;
 }
