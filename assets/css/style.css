@@ -54,6 +54,21 @@ a {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
+#video-background {
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    width:100%;
+}
+
+.jumbotron{
+  position: relative;
+  z-index:-101;
+}
 
 a:hover,
 a:focus {
@@ -120,7 +135,7 @@ a.navbar-brand:hover {
 
 /* Header */
 
-#header {	
+#header {
 	background-color: #444;
 	background: url(../img/main-bg.jpg) no-repeat center top;
 	margin-top: -20px;
@@ -129,7 +144,7 @@ a.navbar-brand:hover {
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -197,4 +212,4 @@ h2.subtitle {
 p.copyright {
 	color: #fff;
 	text-align: center;
-}	
+}
