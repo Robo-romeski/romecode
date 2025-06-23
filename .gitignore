@@ -68,3 +68,10 @@ out/
 
 # FTP quota file
 .ftpquota
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
