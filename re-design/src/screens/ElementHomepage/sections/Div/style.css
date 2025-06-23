@@ -1,0 +1,170 @@
+.div {
+  height: 448px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1384px;
+}
+
+.div .icon-4 {
+  background-color: #c9d0ea;
+  border-radius: 30px;
+  height: 60px;
+  left: 1320px;
+  position: absolute;
+  top: 276px;
+  width: 60px;
+}
+
+.div .img-4 {
+  height: 17px;
+  left: 19px;
+  position: absolute;
+  top: 22px;
+  width: 22px;
+}
+
+.div .overlap-28 {
+  border-radius: 30px;
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 276px;
+  width: 60px;
+}
+
+.div .ellipse-2 {
+  background-color: #f3f6ff;
+  border-radius: 30px;
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  width: 60px;
+}
+
+.div .vector-54 {
+  height: 9px;
+  left: 19px;
+  position: absolute;
+  top: 22px;
+  width: 17px;
+}
+
+.div .vector-55 {
+  height: 9px;
+  left: 19px;
+  position: absolute;
+  top: 29px;
+  width: 22px;
+}
+
+.div .text-wrapper-16 {
+  color: #17224a;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 46px;
+  font-weight: 700;
+  left: 482px;
+  letter-spacing: 0;
+  line-height: 56px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.div .some-of-the-apps-and {
+  color: #3b4465;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 431px;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  text-align: center;
+  top: 76px;
+  white-space: nowrap;
+}
+
+.div .element-7 {
+  height: 285px;
+  left: 90px;
+  position: absolute;
+  top: 163px;
+  width: 382px;
+}
+
+.div .overlap-group-8 {
+  height: 321px;
+  left: -40px;
+  position: relative;
+  top: -36px;
+  width: 460px;
+}
+
+.div .text-wrapper-17 {
+  color: #17224a;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  left: 133px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 291px;
+  white-space: nowrap;
+}
+
+.div .img-5 {
+  height: 320px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 460px;
+}
+
+.div .element-8 {
+  height: 285px;
+  left: 500px;
+  position: absolute;
+  top: 163px;
+  width: 382px;
+}
+
+.div .text-wrapper-18 {
+  color: #17224a;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  left: 55px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 291px;
+  white-space: nowrap;
+}
+
+.div .element-9 {
+  height: 285px;
+  left: 910px;
+  position: absolute;
+  top: 163px;
+  width: 382px;
+}
+
+.div .glowup-skincare {
+  color: #17224a;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  left: 59px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 291px;
+  white-space: nowrap;
+}

@@ -115,6 +115,18 @@ display: none;
   color: #000;
 }
 
+.navbar .statement:hover,
+.navbar .statement:focus {
+  color: #b7cb1b !important;
+}
+
+@media (max-width: 800px) {
+  .statement {
+    color: #fff !important;
+    padding-right: 0;
+  }
+}
+
 #menufade {
   /*background: url(/assets/img/wall-light.png) repeat;*/
   background-color: rgba(255,255,255);

@@ -1,0 +1,185 @@
+.element-section-wrapper {
+  height: 642px;
+  left: 360px;
+  position: absolute;
+  top: 916px;
+  width: 1204px;
+}
+
+.element-section-wrapper .text-wrapper-8 {
+  color: #17224a;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 46px;
+  font-weight: 700;
+  left: 330px;
+  letter-spacing: 0;
+  line-height: 56px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.element-section-wrapper .romecode-delivers {
+  color: #3b4465;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 226px;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  text-align: center;
+  top: 76px;
+}
+
+.element-section-wrapper .element {
+  height: 220px;
+  left: 0;
+  position: absolute;
+  top: 172px;
+  width: 589px;
+}
+
+.element-section-wrapper .overlap {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #e8ebf8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 40px #3d54a524;
+  height: 220px;
+  position: relative;
+  width: 585px;
+}
+
+.element-section-wrapper .text-wrapper-9 {
+  color: #17224a;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  left: 132px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 45px;
+  width: 301px;
+}
+
+.element-section-wrapper .text-wrapper-10 {
+  color: #3b4465;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 29px;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  top: 133px;
+  width: 525px;
+}
+
+.element-section-wrapper .icon {
+  height: 92px;
+  left: 32px;
+  position: absolute;
+  top: 40px;
+  width: 79px;
+}
+
+.element-section-wrapper .overlap-group-2 {
+  height: 92px;
+  position: relative;
+}
+
+.element-section-wrapper .group-4 {
+  height: 92px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 41px;
+}
+
+.element-section-wrapper .rectangle {
+  background-color: #3d54a5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px #3d54a580;
+  height: 70px;
+  left: 9px;
+  position: absolute;
+  top: 11px;
+  width: 70px;
+}
+
+.element-section-wrapper .group-wrapper {
+  height: 42px;
+  left: 23px;
+  position: absolute;
+  top: 25px;
+  width: 42px;
+}
+
+.element-section-wrapper .group-5 {
+  height: 41px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 42px;
+}
+
+.element-section-wrapper .overlap-wrapper {
+  height: 220px;
+  left: 0;
+  position: absolute;
+  top: 422px;
+  width: 589px;
+}
+
+.element-section-wrapper .overlap-group-wrapper {
+  height: 92px;
+  left: 29px;
+  position: absolute;
+  top: 29px;
+  width: 79px;
+}
+
+.element-section-wrapper .group-6 {
+  height: 38px;
+  left: 5px;
+  position: absolute;
+  top: 2px;
+  width: 32px;
+}
+
+.element-section-wrapper .element-2 {
+  height: 220px;
+  left: 615px;
+  position: absolute;
+  top: 172px;
+  width: 589px;
+}
+
+.element-section-wrapper .group-7 {
+  height: 37px;
+  left: 1px;
+  position: absolute;
+  top: 3px;
+  width: 39px;
+}
+
+.element-section-wrapper .element-3 {
+  height: 220px;
+  left: 615px;
+  position: absolute;
+  top: 422px;
+  width: 589px;
+}
+
+.element-section-wrapper .frame-3 {
+  background-image: url(https://c.animaapp.com/oQq6x1yU/img/group-5@2x.png);
+  background-size: 100% 100%;
+  height: 42px;
+  left: 23px;
+  position: absolute;
+  top: 25px;
+  width: 42px;
+}
