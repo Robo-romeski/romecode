@@ -9,12 +9,15 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "task-master-ai": "^0.18.0"
   },
   "devDependencies": {
     "@animaapp/vite-plugin-screen-graph": "^0.1.5",
+    "@tailwindcss/postcss": "^4.1.10",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "^10.4.21",
     "esbuild": "0.24.0",

@@ -624,37 +624,3 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-content,
-    .cloud-tech-content,
-    .cta-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .why-choose-grid,
-    .expertise-grid,
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero-title {
-        font-size: 28px;
-    }
-    
-    .nav {
-        display: none;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-}
