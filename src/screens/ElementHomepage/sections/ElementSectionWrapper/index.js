@@ -1,1 +1,0 @@
-export { ElementSectionWrapper } from "./ElementSectionWrapper";
