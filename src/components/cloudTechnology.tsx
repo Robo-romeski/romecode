@@ -6,7 +6,7 @@ const CloudTechnology = () => {
   return (
     <section className="py-10 lg:py-20 px-4 lg:px-0 mt-0 lg:mt-10">
       <h1 className="text-center text-2xl lg:text-4xl font-bold text-titleBlack">
-        Cloud Technology That Works for You__
+        Cloud Technology That Works for You
       </h1>
       <div className="flex w-full md:w-[60%] mx-auto max-w-[1300px]">
         <div className="flex w-full flex-col lg:flex-row mt-10 justify-between lg:mt-18 gap-5">

@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import cloudconsulting from '../assets/expertise/cloudconsulting.png'
-import mobileandweb from '../assets/Layer_1.png'
-import HardwareFullfullment from '../assets/Layer_2.png'
+import server from '../assets/server.png'
+import cloud from '../assets/cloud.png'
+import mobileandweb from '../assets/laptop.png'
+import HardwareFullfullment from '../assets/hardware.png'
+import storage from '../assets/storage_small.png'
+import security from '../assets/scan.png'
+import blade from '../assets/blade.png'
 import backgroundImg from '../assets/03-Section.png'
 import Previous from '../assets/expertise/left.svg'
 import Next from '../assets/expertise/right.svg'
@@ -11,16 +16,22 @@ const OurExpertise = () => {
 
   const expertiseItems = [
     {
-      title: 'Cloud Consulting',
+      title: 'Infrastructure Consulting',
       description:
-        'Experts guide your business transition to cloud storage and services, ensuring security, cost-efficiency, and a smooth migration.',
-      image: cloudconsulting,
+        'Expert guides for scaling your business smoothly and cost-efficiently. Design, deploy, and optimize infrastructure across public cloud, hybrid cloud, and on-prem environments.',
+      image: cloud,
     },
     {
-      title: 'Web/Mobile Dev',
+      title: 'App & Web Development',
       description:
-        'Craft custom websites and mobile apps that reflect your brand and prioritize user experience for a strong online presence.',
+        'Craft a digital footprint that reflects your brand and prioritizes user experience for a strong online presence. engineered for scale, performance, and clean UX',
       image: mobileandweb,
+    },
+    {
+      title: 'Security',
+      description:
+        'Security-first engineering across all layers — Source, configure, install, maintain, and deliver the security solutions you need',
+      image: security,
     },
     {
       title: 'Hardware Fulfillment',
@@ -28,6 +39,19 @@ const OurExpertise = () => {
         'Source, configure, install, maintain, and even deliver the hardware you need, streamlining your IT equipment needs.',
       image: HardwareFullfullment,
     },
+    {
+      title: 'Data Management',
+      description:
+        'Redundant, automated, and resilient data strategies that support growth and withstand failure.',
+      image: storage,
+    },
+    {
+      title: 'Project Planning & Delivery',
+      description:
+        'Agile, outcome-focused delivery with clear milestones, communication, and full transparency.',
+      image: blade,
+    }
+
   ]
 
   const nextSlide = () => {
@@ -52,7 +76,7 @@ const OurExpertise = () => {
   // }
 
   return (
-    <section className="flex justify-center relative mt-14 md:mt-10 w-full px-4 py-10 lg:px-0">
+    <section id="our-services" className="flex justify-center relative mt-14 md:mt-10 w-full px-4 py-10 lg:px-0">
       <img
         src={backgroundImg}
         className="absolute top-0 left-0 z-0 w-full h-full object-cover"
@@ -60,7 +84,7 @@ const OurExpertise = () => {
       />
       <div className="z-10 w-full md:w-[60%] max-w-[1300px] flex-col flex justify-center py-8 lg:py-0">
         <h1 className="text-center text-2xl lg:text-[46px] font-bold text-titleBlack mb-8 lg:mb-0">
-          Our Expertise_
+          Our Expertise
         </h1>
 
         {/* Desktop View: 3 Cards */}
@@ -85,7 +109,7 @@ const OurExpertise = () => {
                   </p>
                   <img
                     src={item.image}
-                    className="w-full max-w-[150px] sm:max-w-[200px] lg:max-w-none mt-auto"
+                    className="w-full max-w-[120px] sm:max-w-[140px] lg:max-w-[160px] h-auto object-contain mt-auto"
                     alt={item.title}
                   />
                 </div>
@@ -130,7 +154,7 @@ const OurExpertise = () => {
                   </p>
                   <img
                     src={item.image}
-                    className="w-full max-w-[200px] mt-auto"
+                    className="w-full max-w-[140px] h-auto object-contain mt-auto mx-auto"
                     alt={item.title}
                   />
                 </div>

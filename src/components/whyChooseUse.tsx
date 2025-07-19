@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
     >
       <div className="flex justify-center flex-col items-center">
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-titleBlack">
-          Why Choose Romcode_
+          Why Choose Romecode?
         </h1>
         <p className="w-full sm:w-4/5 md:w-3/5 text-center text-desgray p-2 mt-5">
           RomeCode delivers tailored cloud, web, and app solutions with

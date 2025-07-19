@@ -1,6 +1,8 @@
 import { FaInstagram } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa6'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { FiX } from 'react-icons/fi'
+import { FaLinkedin } from 'react-icons/fa6'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Email from '../assets/topbar/email.svg'
@@ -28,13 +30,14 @@ const Header = () => {
             </div>
           </a>
           <div className="flex lg:flex-row justify-around gap-5 h-full items-center">
-            <button className="px-4 py-1 rounded-md border font-bold text-base tracking-wide cursor-pointer border-white">
-              Free Quote
-            </button>
-            <div className="flex flex-row gap-4">
-              <FaFacebook size={18} className="cursor-pointer" />
-              <FaInstagram size={18} className="cursor-pointer" />
-            </div>
+            <a
+              href="/pdfs/RomeCodeCapabilityStatement.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-1 rounded-md border font-bold text-base tracking-wide cursor-pointer border-white bg-transparent text-white hover:bg-white hover:text-primary transition-colors"
+            >
+              Capability Statement
+            </a>
           </div>
         </div>
       </div>
@@ -50,20 +53,22 @@ const Header = () => {
             </picture>
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex flex-row gap-8 xl:gap-10 text-[#080A11] font-normal tracking-tight">
-              <Link to="/">Home</Link>
               <a href="#why-choose-us">Why Choose Us</a>
-              <Link to="#our-services">Our Services</Link>
-              <Link to="#contact">Contact Us</Link>
+              <a href="#our-services">Our Services</a>
+              <a href="#contact">Contact Us</a>
             </nav>
           </div>
 
           {/* Desktop Phone Button */}
-          <div className="hidden lg:flex gap-1 px-4 py-2 rounded-md items-center bg-[#FFD639] cursor-pointer">
+          <a
+            href="tel:13477888436"
+            className="hidden lg:flex gap-1 px-4 py-2 rounded-md items-center bg-[#FFD639] cursor-pointer"
+          >
             <img src={Phone} width={21} height={21} />
             <span className="text-[#080A11] text-base font-bold">
-              +987 654 3210
+              (347) 788-8436
             </span>
-          </div>
+          </a>
 
           {/* Mobile Hamburger Menu Button */}
           <button
@@ -97,27 +102,17 @@ const Header = () => {
                     info@romecode.com
                   </span>
                 </a>
-                <div className="flex gap-3">
-                  <FaFacebook
-                    size={16}
-                    className="text-[#3d54a5] cursor-pointer"
-                  />
-                  <FaInstagram
-                    size={16}
-                    className="text-[#3d54a5] cursor-pointer"
-                  />
-                </div>
               </div>
 
               {/* Mobile Navigation */}
               <nav className="flex flex-col gap-4 mb-6">
-                <Link
-                  to="/"
+                <a
+                  href="/"
                   className="text-[#080A11] text-base font-medium py-2 hover:text-[#3d54a5] transition-colors"
                   onClick={toggleMobileMenu}
                 >
                   Home
-                </Link>
+                </a>
                 <a
                   href="#why-choose-us"
                   className="text-[#080A11] text-base font-medium py-2 hover:text-[#3d54a5] transition-colors"
@@ -125,20 +120,20 @@ const Header = () => {
                 >
                   Why Choose Us
                 </a>
-                <Link
-                  to="#our-services"
+                <a
+                  href="#our-services"
                   className="text-[#080A11] text-base font-medium py-2 hover:text-[#3d54a5] transition-colors"
                   onClick={toggleMobileMenu}
                 >
                   Our Services
-                </Link>
-                <Link
-                  to="#contact"
+                </a>
+                <a
+                  href="#contact"
                   className="text-[#080A11] text-base font-medium py-2 hover:text-[#3d54a5] transition-colors"
                   onClick={toggleMobileMenu}
                 >
                   Contact Us
-                </Link>
+                </a>
               </nav>
 
               {/* Mobile Buttons */}
@@ -146,12 +141,15 @@ const Header = () => {
                 <button className="w-full px-4 py-3 rounded-md border font-bold text-base tracking-wide cursor-pointer border-[#3d54a5] text-[#3d54a5] hover:bg-[#3d54a5] hover:text-white transition-colors">
                   Free Quote
                 </button>
-                <div className="flex gap-2 px-4 py-3 justify-center rounded-md items-center bg-[#FFD639] cursor-pointer">
+                <a
+                  href="tel:13477888436"
+                  className="flex gap-2 px-4 py-3 justify-center rounded-md items-center bg-[#FFD639] cursor-pointer"
+                >
                   <img src={Phone} width={18} height={18} />
                   <span className="text-[#080A11] text-sm font-bold">
-                    +987 654 3210
+                    (347) 788-8436
                   </span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
