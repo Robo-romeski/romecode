@@ -1,0 +1,19 @@
+# Task ID: 3
+# Title: Optimize Why Choose Us Grid
+# Status: done
+# Dependencies: None
+# Priority: medium
+# Description: 2x2 grid is too cramped on iPad portrait mode
+# Details:
+Keep single column for < 768px. Add tablet layout: grid-cols-1 md:grid-cols-2 lg:grid-cols-2. Adjust card padding: p-3 md:p-4 lg:p-3. Test card readability at 768px and 820px.
+
+# Test Strategy:
+Verify grid layout changes at correct breakpoints and cards have appropriate spacing and are readable.
+
+# Subtasks:
+## 1. Update grid layout for tablets [done]
+### Dependencies: None
+### Description: Implement responsive grid that shows 2 columns on tablets instead of cramped 2x2
+### Details:
+Update grid classes to: grid-cols-1 md:grid-cols-2 lg:grid-cols-2. This ensures single column on mobile, 2 columns on tablets and desktop for better readability.
+

@@ -1,0 +1,79 @@
+Product Requirements Document: RomeCode Website iPad Layout Fixes
+
+Project Overview:
+The RomeCode website currently has responsive design issues on iPad and tablet devices (768px-1024px viewports). This project aims to fix layout problems, overlapping sections, and optimize the user experience specifically for tablet users.
+
+Tech Stack:
+- React with TypeScript
+- Vite build tool
+- Tailwind CSS for styling
+- Deployed on AWS S3 + CloudFront
+
+Current Issues:
+1. Our Expertise section shows both desktop and mobile carousels simultaneously on tablets
+2. Hero section uses mobile background image with poor spacing on iPad
+3. Why Choose Us grid is too cramped in 2x2 layout on portrait iPads
+4. Cloud Technology section image takes disproportionate space on tablets
+5. Navigation arrows go off-screen due to negative margins
+6. Footer 4-column layout is cramped on iPad portrait
+7. No tablet-specific spacing or breakpoints implemented
+
+Project Goals:
+1. Fix all overlapping and duplicate content issues
+2. Implement proper tablet breakpoints (md: 768px-1023px)
+3. Optimize layouts specifically for iPad portrait and landscape modes
+4. Ensure all interactive elements are easily tappable
+5. Maintain visual hierarchy across all tablet viewports
+6. Create consistent spacing system for tablets
+
+Specific Requirements:
+
+Our Expertise Section:
+- Hide mobile carousel on tablets and show desktop version
+- Create tablet-specific carousel showing 2-3 cards if needed
+- Fix navigation arrow positioning with proper margins
+
+Hero Section:
+- Use desktop background image for tablets
+- Adjust text container spacing for optimal tablet viewing
+- Consider tablet-specific background if needed
+
+Why Choose Us Section:
+- Implement responsive grid: 1 column mobile, 2 columns tablet, 2 columns desktop
+- Adjust card padding for better readability on tablets
+- Maintain consistent card heights
+
+Cloud Technology Section:
+- Stack layout vertically on tablets
+- Limit image size to max 350px on tablets
+- Center align content for better visual balance
+
+Navigation Elements:
+- Fix carousel arrow positioning to stay within viewport
+- Ensure proper tap targets (minimum 44x44px)
+- Add appropriate hover/active states
+
+Footer:
+- Change from 4-column to 2-column layout on tablets
+- Improve spacing between sections
+- Center align content appropriately
+
+General Requirements:
+- Add tablet-specific padding and margins throughout
+- Test on all major iPad viewports (768x1024, 820x1180, 834x1194, 1024x1366)
+- Ensure no horizontal scrolling on any viewport
+- Maintain brand consistency and visual hierarchy
+
+Success Metrics:
+- Zero overlapping sections on tablet viewports
+- All interactive elements meet accessibility standards
+- Consistent and appropriate spacing on all tablet sizes
+- Positive user feedback on tablet experience
+- No layout shifts or content jumping
+
+Testing Requirements:
+- Test on real iPad devices and browser dev tools
+- Verify layouts at 768px, 820px, 1024px breakpoints
+- Check both portrait and landscape orientations
+- Validate touch interactions and tap targets
+- Performance testing on tablet devices 

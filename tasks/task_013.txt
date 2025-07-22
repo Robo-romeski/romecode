@@ -1,0 +1,11 @@
+# Task ID: 13
+# Title: Migrate Hero Section with Image Optimization
+# Status: pending
+# Dependencies: 12
+# Priority: high
+# Description: Convert Hero component using Next.js Image optimization
+# Details:
+Migrate Hero component as Server Component. Use next/image for background images with responsive loading. Implement blur placeholders. Optimize for Core Web Vitals with proper image sizing.
+
+# Test Strategy:
+Test image loading on various devices, verify responsive images work, check Core Web Vitals scores, ensure no layout shift.

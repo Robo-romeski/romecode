@@ -1,0 +1,11 @@
+# Task ID: 17
+# Title: Create Contact Form API Route
+# Status: pending
+# Dependencies: 11
+# Priority: medium
+# Description: Implement backend API for contact form functionality
+# Details:
+Create API route at app/api/contact/route.ts. Implement email sending with SendGrid or Resend. Add validation, rate limiting, and error handling. Configure CORS if needed.
+
+# Test Strategy:
+Test form submission, verify emails send, check rate limiting works, validate error handling.
