@@ -4,7 +4,7 @@ const WhyChooseUs = () => {
   return (
     <section
       id="why-choose-us"
-      className="flex justify-center mt-14 max-w-[1300px] mx-auto w-[95%] lg:w-[60%]"
+      className="flex justify-center mt-10 md:mt-14 lg:mt-28 max-w-[1300px] mx-auto w-[95%] lg:w-[60%]"
     >
       <div className="flex justify-center flex-col items-center">
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-titleBlack">
@@ -16,18 +16,22 @@ const WhyChooseUs = () => {
           budget, and built for long-term succes
         </p>
 
-        <main className="grid grid-cols-1 md:grid-cols-2 mt-14 p-2 place-items-center gap-5 w-full">
+        <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-14 p-2 md:p-4 place-items-center gap-5 md:gap-6 w-full">
           {WhyChooseUsData.map((data) => {
             return (
               <div
                 key={data.title}
-                className="w-full p-3 flex flex-col rounded-[10px] border-[1px] border-[#E8ECF9]"
+                className="w-full p-3 md:p-4 lg:p-3 flex flex-col rounded-[10px] border-[1px] border-[#E8ECF9]"
                 style={{
                   boxShadow: '0px 4px 40px rgba(61, 84, 165, 0.14)',
                 }}
               >
                 <div className="flex flex-row h-full items-center">
-                  <img src={data.icon} />
+                  <img 
+                    src={data.icon} 
+                    alt={data.title}
+                    loading="lazy"
+                  />
                   <h2 className="text-titleBlack text-base lg:text-xl font-bold w-[60%]">
                     {data.title}
                   </h2>

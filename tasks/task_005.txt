@@ -1,0 +1,19 @@
+# Task ID: 5
+# Title: Fix Navigation Arrows Positioning
+# Status: done
+# Dependencies: None
+# Priority: medium
+# Description: Carousel arrows with negative margins may go off-screen
+# Details:
+Update Our Expertise arrows: left-2 right-2 md:left-4 md:right-4 lg:left-[-60px] lg:right-[-60px]. Apply same fix to Track Record section if present. Ensure arrows are always visible and tappable on touch devices. Add hover states for better UX.
+
+# Test Strategy:
+Verify arrows remain within viewport on all screen sizes and are easily tappable (44x44px minimum).
+
+# Subtasks:
+## 1. Fix carousel arrow positioning [done]
+### Dependencies: None
+### Description: Update arrow positions to stay within viewport on all screen sizes
+### Details:
+Change arrow classes to: left-2 right-2 md:left-4 md:right-4 lg:left-[-60px] lg:right-[-60px]. This ensures arrows stay visible on tablets while maintaining negative margins on desktop.
+

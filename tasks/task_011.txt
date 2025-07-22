@@ -1,0 +1,11 @@
+# Task ID: 11
+# Title: Configure Next.js for Production
+# Status: pending
+# Dependencies: 10
+# Priority: high
+# Description: Optimize Next.js configuration for security, performance, and SEO
+# Details:
+Configure next.config.js with image optimization, security headers, redirects, and performance settings. Set up environment variables structure for dev/staging/prod. Configure TypeScript for strict mode.
+
+# Test Strategy:
+Run build process, check security headers, verify image optimization works, test environment variable loading.

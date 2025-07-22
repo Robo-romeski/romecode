@@ -1,0 +1,432 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Fix Our Expertise Section Desktop/Mobile Overlap",
+        "description": "Both desktop and mobile carousels are visible simultaneously on tablet viewports (showing 12 cards instead of 6)",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "details": "Update desktop version classes from hidden lg:block to remain as is. Update mobile version to use lg:hidden properly. Add tablet-specific carousel with hidden md:block lg:hidden showing 2-3 cards. Test at 768px, 820px, and 1024px breakpoints.",
+        "testStrategy": "Test on iPad devices at 768x1024, 820x1180, and 1024x1366 viewports. Verify only one carousel shows and correct number of cards are visible.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Analyze current carousel implementation",
+            "description": "Review ourExpertise.tsx to understand current carousel structure and identify why both versions show simultaneously",
+            "details": "Examine the current implementation in src/components/ourExpertise.tsx. Document how desktop and mobile versions are currently structured. Identify the exact CSS classes causing the overlap issue.",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 1
+          },
+          {
+            "id": 2,
+            "title": "Fix mobile carousel visibility classes",
+            "description": "Update mobile carousel to use lg:hidden to properly hide on desktop viewports",
+            "details": "Modify the mobile carousel container classes to ensure it only shows on mobile and tablets, not on desktop. Replace current visibility classes with proper lg:hidden implementation.",
+            "status": "done",
+            "dependencies": [
+              "1.1"
+            ],
+            "parentTaskId": 1
+          },
+          {
+            "id": 3,
+            "title": "Create tablet-specific carousel variant",
+            "description": "Implement a carousel variant optimized for tablet viewports showing 2-3 cards",
+            "details": "Create a new carousel implementation with hidden md:block lg:hidden classes. Configure to show 2 cards on portrait tablets and 3 cards on landscape tablets. Ensure smooth transitions and proper touch controls.",
+            "status": "done",
+            "dependencies": [
+              "1.2"
+            ],
+            "parentTaskId": 1
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Fix Hero Section Background Image",
+        "description": "Mobile background image is used on iPad but layout is too spacious",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "details": "Change mobile background div from md:hidden to sm:hidden. Change desktop background div from hidden md:block to hidden sm:block. Consider adding tablet-specific background image if needed. Adjust text container spacing for tablet viewport.",
+        "testStrategy": "Verify background image switches at correct breakpoint and text spacing is appropriate for tablet sizes.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Update hero background breakpoints",
+            "description": "Modify background image visibility classes to switch at correct tablet breakpoint",
+            "details": "Change mobile background from md:hidden to sm:hidden and desktop background from hidden md:block to hidden sm:block. This ensures tablets use the desktop background image.",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 2,
+            "title": "Adjust hero text spacing for tablets",
+            "description": "Optimize text container padding and margins for tablet viewports",
+            "details": "Review and adjust padding, margins, and text sizes in the hero section for tablets. Add tablet-specific classes like md:py-12 md:text-5xl to improve readability without being too spacious.",
+            "status": "done",
+            "dependencies": [
+              "2.1"
+            ],
+            "parentTaskId": 2
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Optimize Why Choose Us Grid",
+        "description": "2x2 grid is too cramped on iPad portrait mode",
+        "status": "done",
+        "dependencies": [],
+        "priority": "medium",
+        "details": "Keep single column for < 768px. Add tablet layout: grid-cols-1 md:grid-cols-2 lg:grid-cols-2. Adjust card padding: p-3 md:p-4 lg:p-3. Test card readability at 768px and 820px.",
+        "testStrategy": "Verify grid layout changes at correct breakpoints and cards have appropriate spacing and are readable.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Update grid layout for tablets",
+            "description": "Implement responsive grid that shows 2 columns on tablets instead of cramped 2x2",
+            "details": "Update grid classes to: grid-cols-1 md:grid-cols-2 lg:grid-cols-2. This ensures single column on mobile, 2 columns on tablets and desktop for better readability.",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 3
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Fix Cloud Technology Section Balance",
+        "description": "Image takes too much space relative to content cards on tablet",
+        "status": "done",
+        "dependencies": [],
+        "priority": "medium",
+        "details": "Stack vertically on tablets: add flex-col md:flex-col lg:flex-row. Adjust image sizing for tablet: max-w-[300px] md:max-w-[350px] lg:max-w-none. Center align content for tablet view. Test visual balance at tablet breakpoints.",
+        "testStrategy": "Verify layout stacks properly on tablets and image size is proportional to content.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Stack layout vertically on tablets",
+            "description": "Change flex direction to column for tablet viewports",
+            "details": "Update container classes to: flex-col md:flex-col lg:flex-row. This stacks the image and content vertically on tablets for better balance.",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 4
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Fix Navigation Arrows Positioning",
+        "description": "Carousel arrows with negative margins may go off-screen",
+        "status": "done",
+        "dependencies": [],
+        "priority": "medium",
+        "details": "Update Our Expertise arrows: left-2 right-2 md:left-4 md:right-4 lg:left-[-60px] lg:right-[-60px]. Apply same fix to Track Record section if present. Ensure arrows are always visible and tappable on touch devices. Add hover states for better UX.",
+        "testStrategy": "Verify arrows remain within viewport on all screen sizes and are easily tappable (44x44px minimum).",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Fix carousel arrow positioning",
+            "description": "Update arrow positions to stay within viewport on all screen sizes",
+            "details": "Change arrow classes to: left-2 right-2 md:left-4 md:right-4 lg:left-[-60px] lg:right-[-60px]. This ensures arrows stay visible on tablets while maintaining negative margins on desktop.",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 5
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Optimize Footer for Tablets",
+        "description": "4-column layout is too cramped on iPad portrait",
+        "status": "done",
+        "dependencies": [],
+        "priority": "low",
+        "details": "Update grid: grid-cols-1 sm:grid-cols-2 lg:grid-cols-4. Adjust spacing between sections. Center align content on smaller viewports. Test footer links accessibility on touch devices.",
+        "testStrategy": "Verify footer layout changes appropriately and all links are accessible and well-spaced.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Update footer grid for tablets",
+            "description": "Change footer to 2-column layout on tablets for better spacing",
+            "details": "Update footer grid classes from grid-cols-1 lg:grid-cols-4 to grid-cols-1 sm:grid-cols-2 lg:grid-cols-4. This creates a 2-column layout on tablets that's more readable.",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 6
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Add Tablet-Specific Spacing",
+        "description": "Same padding/margins used across all screen sizes",
+        "status": "done",
+        "dependencies": [],
+        "priority": "low",
+        "details": "Update section padding: px-4 md:px-6 lg:px-0. Update section margins: mt-10 md:mt-14 lg:mt-28. Review all sections for consistent tablet spacing. Create spacing variables for consistency.",
+        "testStrategy": "Verify consistent spacing across all sections on tablet viewports.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create tablet spacing system",
+            "description": "Define consistent padding and margin values for tablet breakpoints",
+            "details": "Review all sections and implement consistent tablet spacing: px-4 md:px-6 lg:px-0 for horizontal padding, mt-10 md:mt-14 lg:mt-28 for vertical margins. Create CSS variables or Tailwind config for consistency.",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 7
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Implement Comprehensive Tablet Breakpoint",
+        "description": "No specific tablet optimization between mobile and desktop",
+        "status": "done",
+        "dependencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "priority": "low",
+        "details": "Audit all components for tablet-specific needs. Add md: prefixed classes throughout (768px-1023px). Create tablet-specific layouts where beneficial. Document breakpoint strategy for future development.",
+        "testStrategy": "Full test suite across all iPad viewports ensuring no layout issues remain.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Run comprehensive iPad testing",
+            "description": "Test all fixes across multiple iPad viewports to ensure no layout issues remain",
+            "details": "Test on: 768x1024 (iPad Portrait), 1024x768 (iPad Landscape), 820x1180 (iPad Air Portrait), 1180x820 (iPad Air Landscape), 834x1194 (iPad Pro 11\"), 1024x1366 (iPad Pro 12.9\"). Document any remaining issues.",
+            "status": "done",
+            "dependencies": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "parentTaskId": 8
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Fix Desktop/Mobile Menu Inconsistency",
+        "description": "Desktop and mobile menus had different navigation items causing user confusion",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "details": "Mobile menu had 'Home' link and 'Free Quote' button that desktop didn't have. Desktop had 'Capability Statement' in top bar that mobile was missing. Fixed by removing 'Home' from mobile (unnecessary since we're on home page) and replacing 'Free Quote' button with 'Capability Statement' link. Both menus now have identical navigation: Why Choose Us, Our Services, Contact Us, plus Capability Statement and phone number.",
+        "testStrategy": "Test on actual mobile devices to ensure menu opens properly, all links work, and Capability Statement PDF opens correctly. Verify desktop menu remains unchanged.",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Set Up Next.js Project Structure",
+        "description": "Create new Next.js project with TypeScript, Tailwind CSS, and proper configuration",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "details": "Initialize a new Next.js 14+ project with App Router, TypeScript, and Tailwind CSS. Configure project structure, ESLint, Prettier, and development environment. Set up Git repository and deployment pipeline.",
+        "testStrategy": "Verify development server runs, TypeScript compiles without errors, Tailwind styles work, and basic deployment succeeds.",
+        "subtasks": []
+      },
+      {
+        "id": 11,
+        "title": "Configure Next.js for Production",
+        "description": "Optimize Next.js configuration for security, performance, and SEO",
+        "status": "done",
+        "dependencies": [
+          10
+        ],
+        "priority": "high",
+        "details": "Configure next.config.js with image optimization, security headers, redirects, and performance settings. Set up environment variables structure for dev/staging/prod. Configure TypeScript for strict mode.",
+        "testStrategy": "Run build process, check security headers, verify image optimization works, test environment variable loading.",
+        "subtasks": []
+      },
+      {
+        "id": 12,
+        "title": "Migrate Layout Components",
+        "description": "Convert Header and Footer components to Next.js App Router structure",
+        "status": "done",
+        "dependencies": [
+          11
+        ],
+        "priority": "high",
+        "details": "Create app/layout.tsx root layout. Migrate Header and Footer components maintaining all functionality. Implement proper navigation with Next.js Link component. Add loading.tsx and error.tsx for better UX.",
+        "testStrategy": "Verify navigation works, mobile menu functions, all links are proper Next.js Links, layout persists across page navigation.",
+        "subtasks": []
+      },
+      {
+        "id": 13,
+        "title": "Migrate Hero Section with Image Optimization",
+        "description": "Convert Hero component using Next.js Image optimization",
+        "status": "done",
+        "dependencies": [
+          12
+        ],
+        "priority": "high",
+        "details": "Migrate Hero component as Server Component. Use next/image for background images with responsive loading. Implement blur placeholders. Optimize for Core Web Vitals with proper image sizing.",
+        "testStrategy": "Test image loading on various devices, verify responsive images work, check Core Web Vitals scores, ensure no layout shift.",
+        "subtasks": []
+      },
+      {
+        "id": 14,
+        "title": "Migrate Content Sections as Server Components",
+        "description": "Convert all static content sections to Server Components",
+        "status": "done",
+        "dependencies": [
+          12
+        ],
+        "priority": "medium",
+        "details": "Migrate Why Choose Us, Cloud Technology sections as Server Components. Optimize images with next/image. Ensure responsive design works. Maintain all animations and styling.",
+        "testStrategy": "Verify all sections render server-side, images optimize properly, responsive design intact, no hydration errors.",
+        "subtasks": []
+      },
+      {
+        "id": 15,
+        "title": "Implement Interactive Components as Client Components",
+        "description": "Convert interactive components with proper 'use client' directive",
+        "status": "done",
+        "dependencies": [
+          14
+        ],
+        "priority": "medium",
+        "details": "Convert Our Expertise carousel, mobile menu, Terms modal, and PWA install prompt to Client Components. Ensure proper state management and interactivity. Minimize client-side JavaScript.",
+        "testStrategy": "Test all interactive features work, carousel functions properly, mobile menu toggles, modals open/close correctly.",
+        "subtasks": []
+      },
+      {
+        "id": 16,
+        "title": "Implement SEO and Metadata",
+        "description": "Add comprehensive SEO optimization with Next.js metadata API",
+        "status": "pending",
+        "dependencies": [
+          13,
+          14
+        ],
+        "priority": "high",
+        "details": "Create metadata configuration for all pages. Implement dynamic OG images. Add JSON-LD structured data. Create dynamic sitemap.xml generation. Configure robots.txt.",
+        "testStrategy": "Validate metadata with SEO tools, check OG image preview, verify structured data, test sitemap generation.",
+        "subtasks": []
+      },
+      {
+        "id": 17,
+        "title": "Create Contact Form API Route",
+        "description": "Implement backend API for contact form functionality",
+        "status": "pending",
+        "dependencies": [
+          11
+        ],
+        "priority": "medium",
+        "details": "Create API route at app/api/contact/route.ts. Implement email sending with SendGrid or Resend. Add validation, rate limiting, and error handling. Configure CORS if needed.",
+        "testStrategy": "Test form submission, verify emails send, check rate limiting works, validate error handling.",
+        "subtasks": []
+      },
+      {
+        "id": 18,
+        "title": "Implement PWA Features",
+        "description": "Add Progressive Web App capabilities with next-pwa",
+        "status": "pending",
+        "dependencies": [
+          15
+        ],
+        "priority": "medium",
+        "details": "Configure next-pwa plugin. Create manifest.json. Implement service worker with caching strategies. Add offline fallback page. Maintain install prompt functionality.",
+        "testStrategy": "Test PWA installation, verify offline functionality, check caching works, validate install prompt appears.",
+        "subtasks": []
+      },
+      {
+        "id": 19,
+        "title": "Optimize Performance and Images",
+        "description": "Implement comprehensive performance optimizations",
+        "status": "pending",
+        "dependencies": [
+          13,
+          14,
+          15
+        ],
+        "priority": "high",
+        "details": "Convert all images to next/image. Implement font optimization with next/font. Configure caching headers. Add route prefetching. Optimize bundle splitting. Monitor Core Web Vitals.",
+        "testStrategy": "Run Lighthouse audits, measure Core Web Vitals, test on slow connections, verify lazy loading works.",
+        "subtasks": []
+      },
+      {
+        "id": 20,
+        "title": "Add Analytics and Monitoring",
+        "description": "Implement comprehensive analytics and error tracking",
+        "status": "pending",
+        "dependencies": [
+          16
+        ],
+        "priority": "low",
+        "details": "Add Google Analytics 4 with next/third-parties. Implement Sentry for error tracking. Set up performance monitoring. Configure custom events and conversion tracking.",
+        "testStrategy": "Verify analytics events fire, check error reporting works, validate performance metrics collection.",
+        "subtasks": []
+      },
+      {
+        "id": 21,
+        "title": "Set Up Testing Suite",
+        "description": "Implement comprehensive testing for quality assurance",
+        "status": "pending",
+        "dependencies": [
+          15
+        ],
+        "priority": "medium",
+        "details": "Configure Jest and React Testing Library. Write unit tests for components. Add integration tests for API routes. Set up E2E tests with Playwright. Configure CI/CD pipeline.",
+        "testStrategy": "Run all test suites, verify CI/CD pipeline works, check code coverage meets standards.",
+        "subtasks": []
+      },
+      {
+        "id": 22,
+        "title": "Configure Deployment and CI/CD",
+        "description": "Set up production deployment with zero downtime",
+        "status": "pending",
+        "dependencies": [
+          10
+        ],
+        "priority": "high",
+        "details": "Configure Vercel or AWS Amplify deployment. Set up preview deployments for PRs. Configure environment variables. Implement gradual rollout strategy. Set up monitoring.",
+        "testStrategy": "Test deployment process, verify preview deployments work, check environment variables load, validate rollback procedure.",
+        "subtasks": []
+      },
+      {
+        "id": 23,
+        "title": "Perform Migration and Go Live",
+        "description": "Execute final migration and deployment to production",
+        "status": "pending",
+        "dependencies": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "priority": "high",
+        "details": "Execute production deployment. Configure DNS and SSL. Implement redirects from old URLs. Monitor for issues. Execute rollback if needed. Update documentation.",
+        "testStrategy": "Verify all functionality works in production, check redirects work, monitor error rates, validate performance metrics.",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-07-19T15:07:11.646Z",
+      "updated": "2025-07-20T22:36:28.411Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

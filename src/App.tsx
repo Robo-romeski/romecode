@@ -1,9 +1,13 @@
-import AllRoutes from "./allRoutes/routes"
+import AllRoutes from './allRoutes/routes'
+import { PWAInstallPrompt } from './components/PWAInstallPrompt'
 
 function App() {
-return(<main>
-  <AllRoutes/>
-</main>)
+  return (
+    <>
+      <AllRoutes />
+      <PWAInstallPrompt />
+    </>
+  )
 }
 
 export default App

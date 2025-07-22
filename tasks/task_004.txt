@@ -1,0 +1,19 @@
+# Task ID: 4
+# Title: Fix Cloud Technology Section Balance
+# Status: done
+# Dependencies: None
+# Priority: medium
+# Description: Image takes too much space relative to content cards on tablet
+# Details:
+Stack vertically on tablets: add flex-col md:flex-col lg:flex-row. Adjust image sizing for tablet: max-w-[300px] md:max-w-[350px] lg:max-w-none. Center align content for tablet view. Test visual balance at tablet breakpoints.
+
+# Test Strategy:
+Verify layout stacks properly on tablets and image size is proportional to content.
+
+# Subtasks:
+## 1. Stack layout vertically on tablets [done]
+### Dependencies: None
+### Description: Change flex direction to column for tablet viewports
+### Details:
+Update container classes to: flex-col md:flex-col lg:flex-row. This stacks the image and content vertically on tablets for better balance.
+

@@ -1,0 +1,11 @@
+# Task ID: 12
+# Title: Migrate Layout Components
+# Status: pending
+# Dependencies: 11
+# Priority: high
+# Description: Convert Header and Footer components to Next.js App Router structure
+# Details:
+Create app/layout.tsx root layout. Migrate Header and Footer components maintaining all functionality. Implement proper navigation with Next.js Link component. Add loading.tsx and error.tsx for better UX.
+
+# Test Strategy:
+Verify navigation works, mobile menu functions, all links are proper Next.js Links, layout persists across page navigation.

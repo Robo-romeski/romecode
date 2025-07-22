@@ -43,8 +43,6 @@ yarn-error.log*
 .yarn-integrity
 
 # Environment variables
-.env
-.env.local
 .env.*.local
 
 # Build output
@@ -90,6 +88,8 @@ dev-debug.log
 *.sln
 *.sw?
 # OS specific
+
 # Task files
-tasks.json
-tasks/ 
+# tasks.json
+# tasks/ 
+config.bat

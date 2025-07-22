@@ -1,0 +1,11 @@
+# Task ID: 20
+# Title: Add Analytics and Monitoring
+# Status: pending
+# Dependencies: 16
+# Priority: low
+# Description: Implement comprehensive analytics and error tracking
+# Details:
+Add Google Analytics 4 with next/third-parties. Implement Sentry for error tracking. Set up performance monitoring. Configure custom events and conversion tracking.
+
+# Test Strategy:
+Verify analytics events fire, check error reporting works, validate performance metrics collection.

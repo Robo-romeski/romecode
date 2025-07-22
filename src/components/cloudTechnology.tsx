@@ -4,24 +4,28 @@ import cloudicon2 from '../assets/cloudicon2.png'
 import cloudicon3 from '../assets/cloudicon3.png'
 const CloudTechnology = () => {
   return (
-    <section className="py-10 lg:py-20 px-4 lg:px-0 mt-0 lg:mt-10">
+    <section className="py-10 md:py-14 lg:py-20 px-4 md:px-6 lg:px-0 mt-10 md:mt-14 lg:mt-28">
       <h1 className="text-center text-2xl lg:text-4xl font-bold text-titleBlack">
         Cloud Technology That Works for You
       </h1>
-      <div className="flex w-full md:w-[60%] mx-auto max-w-[1300px]">
-        <div className="flex w-full flex-col lg:flex-row mt-10 justify-between lg:mt-18 gap-5">
-          <div className="w-full md:w-1/2 flex justify-center lg:justify-start">
+      <div className="flex w-full md:w-[90%] lg:w-[60%] mx-auto max-w-[1300px]">
+        <div className="flex w-full flex-col md:flex-col lg:flex-row mt-10 justify-between lg:mt-18 gap-5 md:gap-8 lg:gap-5">
+          <div className="w-full md:w-full lg:w-1/2 flex justify-center md:justify-center lg:justify-start">
             <img
-              className="w-full max-w-[400px] lg:max-w-none"
+              className="w-full max-w-[300px] md:max-w-[350px] lg:max-w-none"
               src={cloudimage}
+              alt="Cloud Technology"
+              loading="lazy"
             />
           </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-5">
+          <div className="w-full md:w-full lg:w-1/2 flex flex-col gap-5">
             <div className="flex flex-col items-center lg:flex-row max-w-full border border-[#E8ECF9] p-4 lg:p-2 rounded-lg">
               <div className="w-full lg:w-[200px] flex justify-center lg:justify-start mb-3 lg:mb-0">
                 <img
                   className="w-32 h-32 lg:w-full lg:h-auto object-contain"
                   src={cloudicon1}
+                  alt="Cloud Storage"
+                  loading="lazy"
                 />
               </div>
               <div className="text-center lg:text-left">
@@ -39,6 +43,8 @@ const CloudTechnology = () => {
                 <img
                   className="w-32 h-32 lg:w-full lg:h-auto object-contain"
                   src={cloudicon2}
+                  alt="Cloud Migration"
+                  loading="lazy"
                 />
               </div>
               <div className="text-center lg:text-left">
@@ -56,6 +62,8 @@ const CloudTechnology = () => {
                 <img
                   className="w-32 h-32 lg:w-full lg:h-auto object-contain"
                   src={cloudicon3}
+                  alt="Cloud Security"
+                  loading="lazy"
                 />
               </div>
               <div className="text-center lg:text-left">

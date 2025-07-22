@@ -16,7 +16,7 @@ const Getfreeconsultation = () => {
   }
 
   return (
-    <section id="contact" className="mt-14 px-4 lg:px-0 mx-auto md:mt-10 lg:mt-28 relative max-w-full w-full h-[70vh]">
+    <section id="contact" className="mt-10 md:mt-14 lg:mt-28 px-4 md:px-6 lg:px-0 mx-auto relative max-w-full w-full h-[70vh] md:h-[75vh] lg:h-[70vh]">
       {/* Modal */}
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
@@ -47,7 +47,7 @@ const Getfreeconsultation = () => {
             Get in touch today and take the first step toward smarter digital transformation.
           </h4>
           <p className="text-sm text-textgray w-full">
-          Whether you're launching something new or need to modernize, we'll help you architect the right solution. RomeCode is ready to make it happen.
+            Whether you need scalable cloud solutions, a high-performing app, or a powerful website—RomeCode is ready to make it happen.
           </p>
           <div className="flex justify-start mt-2">
             <a

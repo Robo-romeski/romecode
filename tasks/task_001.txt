@@ -1,0 +1,31 @@
+# Task ID: 1
+# Title: Fix Our Expertise Section Desktop/Mobile Overlap
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Both desktop and mobile carousels are visible simultaneously on tablet viewports (showing 12 cards instead of 6)
+# Details:
+Update desktop version classes from hidden lg:block to remain as is. Update mobile version to use lg:hidden properly. Add tablet-specific carousel with hidden md:block lg:hidden showing 2-3 cards. Test at 768px, 820px, and 1024px breakpoints.
+
+# Test Strategy:
+Test on iPad devices at 768x1024, 820x1180, and 1024x1366 viewports. Verify only one carousel shows and correct number of cards are visible.
+
+# Subtasks:
+## 1. Analyze current carousel implementation [done]
+### Dependencies: None
+### Description: Review ourExpertise.tsx to understand current carousel structure and identify why both versions show simultaneously
+### Details:
+Examine the current implementation in src/components/ourExpertise.tsx. Document how desktop and mobile versions are currently structured. Identify the exact CSS classes causing the overlap issue.
+
+## 2. Fix mobile carousel visibility classes [done]
+### Dependencies: 1.1
+### Description: Update mobile carousel to use lg:hidden to properly hide on desktop viewports
+### Details:
+Modify the mobile carousel container classes to ensure it only shows on mobile and tablets, not on desktop. Replace current visibility classes with proper lg:hidden implementation.
+
+## 3. Create tablet-specific carousel variant [done]
+### Dependencies: 1.2
+### Description: Implement a carousel variant optimized for tablet viewports showing 2-3 cards
+### Details:
+Create a new carousel implementation with hidden md:block lg:hidden classes. Configure to show 2 cards on portrait tablets and 3 cards on landscape tablets. Ensure smooth transitions and proper touch controls.
+

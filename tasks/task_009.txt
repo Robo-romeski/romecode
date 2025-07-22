@@ -1,0 +1,11 @@
+# Task ID: 9
+# Title: Fix Desktop/Mobile Menu Inconsistency
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Desktop and mobile menus had different navigation items causing user confusion
+# Details:
+Mobile menu had 'Home' link and 'Free Quote' button that desktop didn't have. Desktop had 'Capability Statement' in top bar that mobile was missing. Fixed by removing 'Home' from mobile (unnecessary since we're on home page) and replacing 'Free Quote' button with 'Capability Statement' link. Both menus now have identical navigation: Why Choose Us, Our Services, Contact Us, plus Capability Statement and phone number.
+
+# Test Strategy:
+Test on actual mobile devices to ensure menu opens properly, all links work, and Capability Statement PDF opens correctly. Verify desktop menu remains unchanged.

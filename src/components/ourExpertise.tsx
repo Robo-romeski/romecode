@@ -1,180 +1,229 @@
-import { useState } from 'react'
-import cloudconsulting from '../assets/expertise/cloudconsulting.png'
-import server from '../assets/server.png'
-import cloud from '../assets/cloud.png'
-import mobileandweb from '../assets/laptop.png'
-import HardwareFullfullment from '../assets/hardware.png'
-import storage from '../assets/storage_small.png'
-import security from '../assets/scan.png'
-import blade from '../assets/blade.png'
-import backgroundImg from '../assets/03-Section.png'
-import Previous from '../assets/expertise/left.svg'
-import Next from '../assets/expertise/right.svg'
+'use client'
+
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
+
+interface ExpertiseItem {
+  id: number
+  title: string
+  description: string
+  image: string
+  features: string[]
+  caseStudy?: string
+}
+
+const EXPERTISE_ITEMS: ExpertiseItem[] = [
+  {
+    id: 1,
+    title: 'Cloud Architecture & Migration',
+    description: 'Seamless cloud transformation with zero downtime and optimized costs.',
+    image: '/images/cloud-architecture.jpg',
+    features: [
+      'AWS, Azure, GCP expertise',
+      'Multi-cloud strategies',
+      'Cost optimization',
+      'Security compliance',
+      'Performance monitoring'
+    ],
+    caseStudy: 'Migrated enterprise systems saving 40% on infrastructure costs'
+  },
+  {
+    id: 2,
+    title: 'Custom Application Development',
+    description: 'Modern web and mobile applications built for scale and performance.',
+    image: '/images/app-development.jpg',
+    features: [
+      'React, Next.js, React Native',
+      'Node.js, Python, .NET',
+      'Database design',
+      'API development',
+      'Real-time features'
+    ],
+    caseStudy: 'Built scalable e-commerce platform handling 10M+ transactions'
+  },
+  {
+    id: 3,
+    title: 'Cybersecurity & Compliance',
+    description: 'Comprehensive security solutions protecting your digital assets.',
+    image: '/images/cybersecurity.jpg',
+    features: [
+      'Security audits',
+      'Penetration testing',
+      'SOC 2, HIPAA compliance',
+      'Incident response',
+      'Security training'
+    ],
+    caseStudy: 'Achieved SOC 2 Type II compliance for healthcare startup'
+  },
+  {
+    id: 4,
+    title: 'DevOps & Infrastructure',
+    description: 'Automated CI/CD pipelines and infrastructure as code solutions.',
+    image: '/images/devops.jpg',
+    features: [
+      'Docker & Kubernetes',
+      'CI/CD automation',
+      'Infrastructure as Code',
+      'Monitoring & alerting',
+      'Backup & disaster recovery'
+    ],
+    caseStudy: 'Reduced deployment time from hours to minutes with 99.9% uptime'
+  }
+]
 
 const OurExpertise = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [isAutoplay, setIsAutoplay] = useState(true)
 
-  const expertiseItems = [
-    {
-      title: 'Infrastructure Consulting',
-      description:
-        'Expert guides for scaling your business smoothly and cost-efficiently. Design, deploy, and optimize infrastructure across public cloud, hybrid cloud, and on-prem environments.',
-      image: cloud,
-    },
-    {
-      title: 'App & Web Development',
-      description:
-        'Craft a digital footprint that reflects your brand and prioritizes user experience for a strong online presence. engineered for scale, performance, and clean UX',
-      image: mobileandweb,
-    },
-    {
-      title: 'Security',
-      description:
-        'Security-first engineering across all layers — Source, configure, install, maintain, and deliver the security solutions you need',
-      image: security,
-    },
-    {
-      title: 'Hardware Fulfillment',
-      description:
-        'Source, configure, install, maintain, and even deliver the hardware you need, streamlining your IT equipment needs.',
-      image: HardwareFullfullment,
-    },
-    {
-      title: 'Data Management',
-      description:
-        'Redundant, automated, and resilient data strategies that support growth and withstand failure.',
-      image: storage,
-    },
-    {
-      title: 'Project Planning & Delivery',
-      description:
-        'Agile, outcome-focused delivery with clear milestones, communication, and full transparency.',
-      image: blade,
-    }
+  // Auto-advance slides
+  useEffect(() => {
+    if (!isAutoplay) return
 
-  ]
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % EXPERTISE_ITEMS.length)
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [isAutoplay])
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === expertiseItems.length - 1 ? 0 : prevIndex + 1
-    )
-  }
-  
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? expertiseItems.length - 1 : prevIndex - 1
-    )
+    setCurrentSlide((prev) => (prev + 1) % EXPERTISE_ITEMS.length)
+    setIsAutoplay(false)
   }
 
-  // const getOrderedItems = () => {
-  //   const items = []
-  //   for (let i = 0; i < 3; i++) {
-  //     const index = (currentIndex + i) % expertiseItems.length
-  //     items.push(expertiseItems[index])
-  //   }
-  //   return items
-  // }
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + EXPERTISE_ITEMS.length) % EXPERTISE_ITEMS.length)
+    setIsAutoplay(false)
+  }
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index)
+    setIsAutoplay(false)
+  }
+
+  const currentItem = EXPERTISE_ITEMS[currentSlide]
 
   return (
-    <section id="our-services" className="flex justify-center relative mt-14 md:mt-10 w-full px-4 py-10 lg:px-0">
-      <img
-        src={backgroundImg}
-        className="absolute top-0 left-0 z-0 w-full h-full object-cover"
-        alt="Background"
-      />
-      <div className="z-10 w-full md:w-[60%] max-w-[1300px] flex-col flex justify-center py-8 lg:py-0">
-        <h1 className="text-center text-2xl lg:text-[46px] font-bold text-titleBlack mb-8 lg:mb-0">
-          Our Expertise
-        </h1>
+    <section id="our-expertise" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <div className="max-w-[1300px] mx-auto w-[90%] lg:w-[60%] px-4">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-titleBlack mb-4">
+            Our Expertise
+          </h2>
+          <p className="text-lg text-desgray max-w-2xl mx-auto">
+            Deep technical knowledge combined with proven methodologies to deliver exceptional results.
+          </p>
+        </div>
 
-        {/* Desktop View: 3 Cards */}
-        <div className="hidden lg:block mt-10 w-full px-2 lg:px-0 relative">
-          <div className="overflow-hidden">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
-            >
-              {/* Render all items in sequence for smooth sliding */}
-              {[...expertiseItems, ...expertiseItems].map((item, index) => (
-                <div
-                  key={`${item.title}-${index}`}
-                  className="shadow-sm bg-[#3D54A5]/16 rounded-xl items-center p-4 sm:p-5 overflow-hidden flex flex-col gap-2 mb-4 lg:mb-0 flex-shrink-0 mx-2.5"
-                  style={{ width: 'calc(33.333% - 20px)' }}
-                >
-                  <h2 className="text-titleBlack text-lg sm:text-xl lg:text-[22px] font-semibold text-center mt-2 sm:mt-4">
-                    {item.title}
-                  </h2>
-                  <p className="text-desgray text-base sm:text-lg lg:text-[18px] p-2 sm:p-2 text-center">
-                    {item.description}
-                  </p>
-                  <img
-                    src={item.image}
-                    className="w-full max-w-[120px] sm:max-w-[140px] lg:max-w-[160px] h-auto object-contain mt-auto"
-                    alt={item.title}
-                  />
+        {/* Carousel Container */}
+        <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden">
+          {/* Carousel Content */}
+          <div className="grid lg:grid-cols-2 gap-0 min-h-[500px]">
+            {/* Content Side */}
+            <div className="p-8 lg:p-12 flex flex-col justify-center">
+              <div className="mb-6">
+                <h3 className="text-2xl lg:text-3xl font-bold text-titleBlack mb-4">
+                  {currentItem.title}
+                </h3>
+                <p className="text-lg text-desgray mb-6 leading-relaxed">
+                  {currentItem.description}
+                </p>
+              </div>
+
+              {/* Features List */}
+              <div className="mb-6">
+                <h4 className="font-semibold text-titleBlack mb-3">Key Capabilities:</h4>
+                <ul className="space-y-2">
+                  {currentItem.features.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-2 text-desgray">
+                      <span className="text-primary mt-1 flex-shrink-0">•</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Case Study */}
+              {currentItem.caseStudy && (
+                <div className="bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
+                  <p className="font-medium text-titleBlack mb-1">Success Story:</p>
+                  <p className="text-desgray text-sm italic">"{currentItem.caseStudy}"</p>
                 </div>
-              ))}
+              )}
+            </div>
+
+            {/* Image Side */}
+            <div className="relative bg-gray-100 lg:min-h-[500px] order-first lg:order-last">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center text-primary">
+                  <div className="w-24 h-24 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-4xl">
+                      {currentSlide === 0 && '☁️'}
+                      {currentSlide === 1 && '💻'}
+                      {currentSlide === 2 && '🔒'}
+                      {currentSlide === 3 && '⚙️'}
+                    </span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-titleBlack">
+                    {currentItem.title.split(' ')[0]} {currentItem.title.split(' ')[1]}
+                  </h4>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Desktop Arrows */}
+          {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-10 transition-all duration-300 hover:scale-110"
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
+            aria-label="Previous expertise"
           >
-            <img src={Previous} alt="Previous" className="w-10 h-10" />
+            <ChevronLeftIcon className="w-5 h-5 text-titleBlack" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 z-10 transition-all duration-300 hover:scale-110"
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
+            aria-label="Next expertise"
           >
-            <img src={Next} alt="Next" className="w-10 h-10" />
+            <ChevronRightIcon className="w-5 h-5 text-titleBlack" />
+          </button>
+
+          {/* Slide Indicators */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {EXPERTISE_ITEMS.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  index === currentSlide
+                    ? 'bg-primary scale-110'
+                    : 'bg-white/60 hover:bg-white/80'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+
+          {/* Autoplay Toggle */}
+          <button
+            onClick={() => setIsAutoplay(!isAutoplay)}
+            className="absolute top-4 right-4 text-sm text-desgray hover:text-titleBlack transition-colors"
+            aria-label={isAutoplay ? 'Pause autoplay' : 'Resume autoplay'}
+          >
+            {isAutoplay ? '⏸️' : '▶️'}
           </button>
         </div>
 
-        {/* Mobile View: Single Card */}
-        <div className="lg:hidden mt-10 w-full relative px-12">
-          <div className="overflow-hidden">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex *100}%)` }}
-            >
-              {/* Render all items for smooth mobile sliding */}
-              {[...expertiseItems, ...expertiseItems].map((item, index) => (
-                <div
-                  key={`mobile-${item.title}-${index}`}
-                  className="shadow-sm bg-[#3D54A5]/16 rounded-xl items-center p-4 sm:p-5 overflow-hidden flex flex-col gap-2 mb-4 flex-shrink-0 w-full"
-                >
-                  <h2 className="text-titleBlack text-lg sm:text-xl font-semibold text-center mt-2 sm:mt-4">
-                    {item.title}
-                  </h2>
-                  <p className="text-desgray text-base sm:text-lg p-2 text-center">
-                    {item.description}
-                  </p>
-                  <img
-                    src={item.image}
-                    className="w-full max-w-[140px] h-auto object-contain mt-auto mx-auto"
-                    alt={item.title}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 transition-all duration-300 hover:scale-110"
-          >
-            <img src={Previous} alt="Previous" className="w-6 h-6 sm:w-8 sm:h-8" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 transition-all duration-300 hover:scale-110"
-          >
-            <img src={Next} alt="Next" className="w-6 h-6 sm:w-8 sm:h-8" />
-          </button>
+        {/* Progress Bar */}
+        <div className="mt-6 w-full bg-gray-200 rounded-full h-1">
+          <div
+            className="bg-primary h-1 rounded-full transition-all duration-300"
+            style={{ width: `${((currentSlide + 1) / EXPERTISE_ITEMS.length) * 100}%` }}
+          />
         </div>
       </div>
     </section>
