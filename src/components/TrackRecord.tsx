@@ -73,14 +73,14 @@ const TrackRecord = () => {
           {/* Desktop Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-[-60px] top-[35%] transform -translate-y-1/2 z-10 transition-all duration-300"
+            className="absolute left-2 lg:left-[-60px] top-[35%] transform -translate-y-1/2 z-10 transition-all duration-300 hover:scale-110"
           >
             <img src={Previous} alt="Previous" className="w-10 h-10" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-[-60px] top-[35%] transform -translate-y-1/2 z-10 transition-all duration-300"
+            className="absolute right-2 lg:right-[-60px] top-[35%] transform -translate-y-1/2 z-10 transition-all duration-300 hover:scale-110"
           >
             <img src={Next} alt="Next" className="w-10 h-10" />
           </button>

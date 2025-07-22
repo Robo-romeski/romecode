@@ -1,0 +1,25 @@
+# Task ID: 2
+# Title: Fix Hero Section Background Image
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Mobile background image is used on iPad but layout is too spacious
+# Details:
+Change mobile background div from md:hidden to sm:hidden. Change desktop background div from hidden md:block to hidden sm:block. Consider adding tablet-specific background image if needed. Adjust text container spacing for tablet viewport.
+
+# Test Strategy:
+Verify background image switches at correct breakpoint and text spacing is appropriate for tablet sizes.
+
+# Subtasks:
+## 1. Update hero background breakpoints [done]
+### Dependencies: None
+### Description: Modify background image visibility classes to switch at correct tablet breakpoint
+### Details:
+Change mobile background from md:hidden to sm:hidden and desktop background from hidden md:block to hidden sm:block. This ensures tablets use the desktop background image.
+
+## 2. Adjust hero text spacing for tablets [done]
+### Dependencies: 2.1
+### Description: Optimize text container padding and margins for tablet viewports
+### Details:
+Review and adjust padding, margins, and text sizes in the hero section for tablets. Add tablet-specific classes like md:py-12 md:text-5xl to improve readability without being too spacious.
+

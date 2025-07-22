@@ -1,0 +1,11 @@
+# Task ID: 15
+# Title: Implement Interactive Components as Client Components
+# Status: pending
+# Dependencies: 14
+# Priority: medium
+# Description: Convert interactive components with proper 'use client' directive
+# Details:
+Convert Our Expertise carousel, mobile menu, Terms modal, and PWA install prompt to Client Components. Ensure proper state management and interactivity. Minimize client-side JavaScript.
+
+# Test Strategy:
+Test all interactive features work, carousel functions properly, mobile menu toggles, modals open/close correctly.

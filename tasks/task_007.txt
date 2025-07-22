@@ -1,0 +1,19 @@
+# Task ID: 7
+# Title: Add Tablet-Specific Spacing
+# Status: done
+# Dependencies: None
+# Priority: low
+# Description: Same padding/margins used across all screen sizes
+# Details:
+Update section padding: px-4 md:px-6 lg:px-0. Update section margins: mt-10 md:mt-14 lg:mt-28. Review all sections for consistent tablet spacing. Create spacing variables for consistency.
+
+# Test Strategy:
+Verify consistent spacing across all sections on tablet viewports.
+
+# Subtasks:
+## 1. Create tablet spacing system [done]
+### Dependencies: None
+### Description: Define consistent padding and margin values for tablet breakpoints
+### Details:
+Review all sections and implement consistent tablet spacing: px-4 md:px-6 lg:px-0 for horizontal padding, mt-10 md:mt-14 lg:mt-28 for vertical margins. Create CSS variables or Tailwind config for consistency.
+
