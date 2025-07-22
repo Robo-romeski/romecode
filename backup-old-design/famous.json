@@ -1,0 +1,123 @@
+[
+ {
+ 	"id": 1,
+	"quote": "Without music, life would be a mistake.",
+	"author":"Friedrich Nietzsche",
+	"source":"Twilight of the Idols"
+ },
+ {
+ 	"id": 2,
+    "quote": "No one can make you feel inferior without your consent.",
+	"author":"Eleanor Roosevelt",
+	"source":"This is My Story"
+ },
+ {
+ 	"id": 3,
+   "quote": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+	"author":"Oscar Wilde",
+	"source":"The Happy Prince and Other Stories"
+ },
+ {
+ 	"id": 4,
+    "quote": "If you were half as funny as you think you are, you'd be twice as funny as you are now.",
+	"author":"Cassandra Clare",
+	"source":"City of Bones"
+ },
+ {
+ 	"id": 5,
+    "quote": "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
+	"author":"J.K. Rowling",
+	"source":"Harry Potter and the Goblet of Fire"
+ },
+ {
+ 	"id": 6,
+    "quote": "Friendship is born at that moment when one man says to another: 'What! You too? I thought that no one but myself . . .' ",
+	"author":"C.S. Lewis",
+	"source":"The Four Loved Ones"
+ },
+  {
+ 	"id": 7,
+    "quote": "What goes on inside is just too fast and huge and all interconnected for words to do more than barely sketch the outlines of at most one tiny little part of it at any given instant.",
+	"author":"David Foster Wallace",
+	"source":"Oblivion"
+ },
+ {
+ 	"id": 8,
+    "quote": "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.",
+	"author":"Martin Luther King Jr.",
+	"source":"A Testament of Hope: The Essential Writings and Speeches"
+ },
+ {
+ 	"id": 9,
+    "quote": "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.",
+	"author":"H. Jackson Brown Jr.",
+	"source":"P.S. I Love You"
+
+ },
+ {
+ 	"id": 10,
+    "quote": "It is better to be hated for what you are than to be loved for what you are not.",
+	"author":"André Gide",
+	"source":"Autumn Leaves"
+ },
+ {
+ 	"id": 11,
+    "quote": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+	"author":"William Shakespeare",
+	"source":"As You Like It"
+ },
+ {
+ 	"id": 12,
+    "quote": "Real integrity is doing the right thing, knowing that nobody's going to know whether you did it or not.",
+	"author":"Oprah Winfrey",
+	"source":"Good Housekeeping"
+ },
+ {
+ 	"id": 13,
+    "quote": "Keep your friends for friendship, but work with the skilled and competent",
+	"author":"Robert Greene",
+	"source":"The 48 Laws of Power"
+ },
+ {
+ 	"id": 14,
+    "quote": "We are all in the gutter, but some of us are looking at the stars.",
+	"author":"Oscar Wilde",
+	"source":"Lady Windermere's Fan"
+ },
+ {
+ 	"id": 15,
+    "quote": "I may not have gone where I intended to go, but I think I have ended up where I needed to be.",
+	"author":"Douglas Adams",
+	"source":"The Long Dark Tea-Time of the Soul"
+ },
+ {
+ 	"id": 16,
+    "quote": "On the Road that I have taken, one day walking I awaken, amazed to see where I've come, where I'm going, where I'm from.",
+	"author":"Dean Koontz",
+	"source":"The Book Of Counted Sorrows"
+ },
+ {
+ 	"id": 17,
+    "quote": "You don’t have a soul, Doctor. You are a soul. You have a body, temporarily.",
+	"author":"Walter M. Miller Jr.",
+	"source":"A Canticle for Leibowitz"
+ },
+ {
+ 	"id": 18,
+    "quote": "There is no greater agony than bearing an untold story inside you.",
+	"author":"Maya Angelou",
+	"source":"I Know Why the Caged Bird Sings"
+ },
+ {
+ 	"id": 19,
+    "quote": "great principles, great ideals know no nationality.",
+	"author":"Marcus Garvey",
+	"source":"Selected Writings and Speeches of Marcus Garvey"
+ },
+ {
+ 	"id": 20,
+    "quote": "When you show yourself to the world and display your talents, you naturally stir all kinds of resentment, envy, and other manifestations of insecurity... you cannot spend your life worrying about the petty feelings of others",
+	"author":"Robert Greene",
+	"source":"The 48 Laws of Power"
+ }
+]

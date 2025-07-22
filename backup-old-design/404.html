@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:url" content="http://www.romecode.com" />
+  <meta property="og:title" content="RomeCode.Com - Development at it's Finest. " />
+  <meta property="og:description" content="
+development with technologies such as angular, react, bootstrap, node.js, Json CSS3 animations.
+Home to games and apps of the future." />
+  <meta property="og:image" content="assets/img/favicon.png" />
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+
+  <!-- Latest compiled and minified CSS -->
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="rome.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="https://use.fontawesome.com/91fac9544b.js"></script>
+  <!-- Preloader -->
+  <script type="text/javascript">
+    //<![CDATA[
+    $(window).load(function () { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({ 'overflow': 'visible' });
+    })
+    //]]>
+  </script>
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    /* Preloader */
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 199;
+      /* change if the mask should have another color then white
+    /* makes sure it stays on top */
+    }
+
+    #status {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      /* centers the loading animation horizontally one the screen */
+      top: 50%;
+      /* centers the loading animation vertically one the screen */
+      background-image: url(assets/img/box.gif);
+      /* path to your loading animation */
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: -100px 0 0 -100px;
+      /* is width and height divided by two */
+    }
+  </style>
+</head>
+
+<title>RomeCode</title>
+<div class='romecode'></div>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- end preloader -->
+  <div class="navbar navbar-fixed-top" id="menufade">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html" id="headlogo">
+        <img src="assets/img/romecode.png" height="50px;" width="200px">
+      </a>
+    </div>
+    <div class="navbar-collapse collapse mini-menu">
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+
+  </div>
+
+
+  <div class="container" id="intro">
+    <div class="smoke smokeMove">
+      <div class="smokeMessage smokeMessageEffect">
+
+        <h1>Page Not Found</h1>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+  <div class="clear"></div>
+  </div>
+
+  <section id="about" data-speed="2" data-type="background">
+    <div class="container">
+      <div class="row-fluid">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="home" data-speed="4" data-type="background">
+    <h1>What we bring to the table</h1>
+    <div class="jumbotron post main smokeMessageEffect" id="jumboOn">
+
+      <div class="row">
+      </div>
+    </div>
+
+  </section>
+
+  <div class="footer" id="footer">
+    <p class="copyright">Copyright - 2014 RomeCode.com
+      <a href="mailto:info@romecode.com">E-mail Me</a>
+    </p>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.viewportchecker.js"></script>
+  <script type="text/javascript" src="assets/js/init.js"></script>
+  <script>
+    $('#parallax .parallax-layer')
+      .parallax({
+        mouseport: $('#parallax')
+      });
+
+    var deviceAgent = navigator.userAgent.toLowerCase();
+
+    $('.roast').removeClass("faze").viewportChecker({
+      classToAdd: 'visible animated pulse',
+      offset: -70
+    });
+
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '703548336388176',
+        xfbml: true,
+        version: 'v2.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+
+</html>
